@@ -1,0 +1,11 @@
+[Unit]
+Description=Team5: Force ConnMan to start at boot
+After=network-pre.target dbus.service
+Wants=dbus.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/systemctl start connman.service
+
+[Install]
+WantedBy=multi-user.target

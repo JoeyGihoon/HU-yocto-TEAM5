@@ -1,0 +1,4 @@
+/build/cache
+/build/tmp
+/build/sstate-cache
+/build/downloads

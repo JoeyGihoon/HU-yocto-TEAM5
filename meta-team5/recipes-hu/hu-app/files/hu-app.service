@@ -1,0 +1,18 @@
+[Unit]
+Description=Team5 HU Qt App
+After=videoplay.service weston.service
+Requires=videoplay.service weston.service
+# 부팅 영상이 끝난 뒤 시작되도록 순서 보장
+Wants=videoplay.service weston.service
+
+[Service]
+Type=simple
+Environment=QT_QPA_PLATFORM=wayland
+Environment=XDG_RUNTIME_DIR=/run
+Environment=WAYLAND_DISPLAY=wayland-0
+# (필요 시) QML_IMPORT_PATH/QML2_IMPORT_PATH 등 추가
+ExecStart=/usr/bin/appTEAM5_HU
+Restart=always
+
+[Install]
+WantedBy=graphical.target

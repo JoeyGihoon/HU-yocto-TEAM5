@@ -1,0 +1,59 @@
+# Yocto QEMU(x86_64) with Sato + Qt6 + SocketCAN
+header:
+  version: 14
+build_system: oe
+
+machine: qemux86-64
+distro: poky
+target:
+  - core-image-sato
+
+repos:
+  poky:
+    url: https://git.yoctoproject.org/poky
+    branch: "scarthgap"
+    layers:
+      meta: {}
+      meta-poky: {}
+      meta-yocto-bsp: {}
+
+  meta-openembedded:
+    url: https://github.com/openembedded/meta-openembedded.git
+    branch: "scarthgap"
+    layers:
+      meta-oe: {}
+      meta-networking: {}
+      meta-python: {}
+
+  meta-qt6:
+    url: https://code.qt.io/yocto/meta-qt6.git
+    branch: "6.6"           # 필요시 "v6.6.3" 같은 정확한 태그나 commit 해시를 써도 됨
+    layers:
+      meta-qt6: {}
+
+local_conf_header:
+  speedups: |
+    BB_HASHSERVE_UPSTREAM = "wss://hashserv.yoctoproject.org/ws"
+    SSTATE_MIRRORS ?= "file://.* http://sstate.yoctoproject.org/all/PATH;downloadfilename=PATH"
+    BB_HASHSERVE = "auto"
+    BB_SIGNATURE_HANDLER = "OEEquivHash"
+
+  qt6_and_graphics: |
+    DISTRO_FEATURES:append = " x11 opengl "
+    PACKAGECONFIG:append:pn-qtbase = " widgets opengl sql-sqlite"
+    # Wayland까지 쓰려면:
+    # DISTRO_FEATURES:append = " wayland "
+    # IMAGE_INSTALL:append = " weston "
+
+  image_packages: |
+    IMAGE_INSTALL:append = " \
+        qtbase qtbase-tools qtbase-plugins \
+        qtdeclarative qtquickcontrols2 \
+        qtwayland \
+        qtserialbus qtserialbus-plugins \
+        can-utils iproute2 kernel-modules \
+    "
+
+  can_autoload: |
+    KERNEL_MODULE_AUTOLOAD:append = " vcan can_raw "
+

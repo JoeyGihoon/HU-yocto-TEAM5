@@ -1,0 +1,19 @@
+[Unit]
+Description=Boot video (one-shot)
+DefaultDependencies=no
+After=systemd-udev-settle.service systemd-modules-load.service plymouth-start.service weston.service
+Before=graphical.target hu-app.service
+Requires=weston.service
+Wants=hu-app.service
+
+[Service]
+Type=oneshot
+# ExecStart=/usr/bin/gst-play-1.0 --videosink=waylandsink /usr/share/bootvideo/videoplay.mp4
+ExecStart=/usr/bin/gst-launch-1.0 filesrc location=/usr/share/bootvideo/videoplay.mp4 ! qtdemux ! h264parse ! avdec_h264 ! videoconvert ! video/x-raw,format=RGBA ! waylandsink fullscreen=true
+RemainAfterExit=yes
+TimeoutSec=0
+Environment=XDG_RUNTIME_DIR=/run
+Environment=WAYLAND_DISPLAY=wayland-0
+
+[Install]
+WantedBy=graphical.target
