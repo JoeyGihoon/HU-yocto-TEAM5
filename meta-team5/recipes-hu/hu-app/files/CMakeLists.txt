@@ -7,12 +7,6 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-target_include_directories(appTEAM5_HU
-  PRIVATE
-    ${COMMUNICATION_SRCGEN_DIR}/core
-    ${COMMUNICATION_SRCGEN_DIR}/someip
-)
-
 # 1) Qt5 컴포넌트 찾기 (필요한 모듈 추가 가능)
 find_package(Qt5 5.15 REQUIRED COMPONENTS
   Core
@@ -47,7 +41,7 @@ add_executable(appTEAM5_HU
     qml.qrc
 )
 
-set(COMMUNICATION_SRCGEN_DIR "${CMAKE_SOURCE_DIR}/../../../../communication/src-gen")
+set(COMMUNICATION_SRCGEN_DIR "${CMAKE_SOURCE_DIR}/src-gen")
 target_include_directories(appTEAM5_HU
   PRIVATE
     ${COMMUNICATION_SRCGEN_DIR}/core

@@ -3,7 +3,9 @@
 #include <QQmlContext>
 #include <QtWebEngine/QtWebEngine>
 #include <QtNetwork/QSslSocket>
+#include <CommonAPI/CommonAPI.hpp>
 
+#include "ICProxy.hpp" // Generated CommonAPI Proxy 헤더 파일
 #include "mapController.h"
 #include "weather.h"
 #include "youtubeController.h"

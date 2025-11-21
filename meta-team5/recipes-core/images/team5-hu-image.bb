@@ -17,6 +17,7 @@ IMAGE_INSTALL:append = " \
   team5-wifi-config \
   openssl ca-certificates \
   connman-autostart \
+  hu-config
 "
 
 IMAGE_INSTALL:remove = " wpa-supplicant"
