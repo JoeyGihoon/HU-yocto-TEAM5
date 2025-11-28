@@ -13,7 +13,7 @@ IMAGE_INSTALL:append = " \
   weston weston-init \
   wpa-supplicant connman connman-client linux-firmware \
   hu-app bootvideo getty-tty2 \
-  linux-firmware-bcm43430 linux-firmware-bcm43455 wpa-supplicant iw dhcpcd \
+  linux-firmware-bcm43430 linux-firmware-bcm43455 wpa-supplicant iw \
   team5-wifi-config \
   openssl ca-certificates \
   connman-autostart \
