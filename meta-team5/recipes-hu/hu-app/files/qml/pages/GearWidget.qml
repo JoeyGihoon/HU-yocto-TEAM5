@@ -16,28 +16,9 @@ AppWidget {
 
     signal gearChanged(string gear)
 
-    // IC -> HU 업데이트 시 setGear 재호출을 막기 위한 플래그
-    property bool suppressSetGear: false
-
-    // IC 쪽 GearController.gearChanged 신호를 받아서 UI에 반영
-    Connections {
-        target: gearController
-        onGearChanged: {
-            // 여기서 currentGear를 바꾸면 아래 onCurrentGearChanged가 또 호출되므로,
-            // suppressSetGear 플래그로 "지금은 네트워크에서 온 업데이트"라고 표시
-            root.suppressSetGear = true
-            gearPanel.currentGear = gear
-            root.suppressSetGear = false
-        }
-    }
-
     // 기어 변경 시 외부로 알려주기
     onCurrentGearChanged: {
         gearChanged(currentGear)
-
-        // IC에서 온 업데이트면 다시 setGear 날리지 않음
-        if (root.suppressSetGear)
-            return
 
         // C++ main.cpp에서 setContextProperty로 등록한 gearController 호출
         if (typeof gearController !== "undefined" && gearController) {

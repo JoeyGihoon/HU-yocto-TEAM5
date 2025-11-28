@@ -49,7 +49,6 @@ int main(int argc, char *argv[])
     initSomeipProxy();
     
     QGuiApplication app(argc, argv);
-
     QQmlApplicationEngine engine;
 
     GearController gearController(g_icProxy);
