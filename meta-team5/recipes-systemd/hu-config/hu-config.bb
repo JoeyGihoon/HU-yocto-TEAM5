@@ -1,23 +1,25 @@
 SUMMARY = "VSOMEIP + CommonAPI config files"
-LICENSE = "MIT"
+LICENSE = "CLOSED"
 
 SRC_URI += " \
-    file://vsomeip.json \
+    file://HU.json \
     file://commonapi-someip.ini \
 "
 
 S = "${WORKDIR}"
 
 do_install() {
-    # vsomeip 설정
-    install -d ${D}/etc/vsomeip
-    install -m 0644 ${WORKDIR}/vsomeip.json ${D}/etc/vsomeip/vsomeip.json
+    # SOME/IP 설정
+    install -d ${D}/opt/HU_someip/json
+    install -m 0644 ${WORKDIR}/HU.json \
+        ${D}/opt/HU_someip/json/HU.json
 
-    # commonapi 설정
-    install -m 0644 ${WORKDIR}/commonapi-someip.ini ${D}/etc/commonapi-someip.ini
+    # CommonAPI 설정
+    install -d ${D}/opt/HU_someip
+    install -m 0644 ${WORKDIR}/commonapi-someip.ini \
+        ${D}/opt/HU_someip/commonapi-someip.ini
 }
 
 FILES:${PN} += " \
-    /etc/vsomeip/vsomeip.json \
-    /etc/commonapi-someip.ini \
+    /opt/HU_someip/ \
 "

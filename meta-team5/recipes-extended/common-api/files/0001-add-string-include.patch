@@ -1,0 +1,12 @@
+diff --git a/include/CommonAPI/Types.hpp b/include/CommonAPI/Types.hpp
+index 1111111..2222222 100644
+--- a/include/CommonAPI/Types.hpp
++++ b/include/CommonAPI/Types.hpp
+@@ -1,6 +1,7 @@
+ #ifndef COMMONAPI_TYPES_HPP_
+ #define COMMONAPI_TYPES_HPP_
+
++#include <string>
+ #include <cstdint>
+ #include <memory>
+ #include <functional>
