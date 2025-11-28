@@ -17,10 +17,9 @@ IMAGE_INSTALL:append = " \
   team5-wifi-config \
   openssl ca-certificates \
   connman-autostart \
+  wifi-powersave-off \
   hu-config tzdata \
 "
-
-IMAGE_INSTALL:remove = " wpa-supplicant"
 
 IMAGE_FEATURES += "splash ssh-server-openssh weston"
 

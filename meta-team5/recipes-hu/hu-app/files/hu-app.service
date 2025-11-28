@@ -1,8 +1,8 @@
 [Unit]
 Description=Team5 HU Qt App
-After=videoplay.service weston.service
+After=videoplay.service weston.service connman.service network-online.target
 Requires=videoplay.service weston.service
-Wants=videoplay.service weston.service
+Wants=videoplay.service weston.service connman.service network-online.target
 
 [Service]
 Type=simple

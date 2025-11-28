@@ -18,6 +18,11 @@ void GearController::setGear(const QString& gear) {
         return;
     }
 
+    if (!proxy_->isAvailable()) {
+        std::cout << "[HU] setGear skipped: IC proxy not available yet" << std::endl;
+        return;
+    }
+
     std::string g = gear.toStdString();
 
     // HU -> IC : setGear 메소드 호출

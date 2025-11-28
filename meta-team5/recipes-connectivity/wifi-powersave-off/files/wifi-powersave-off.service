@@ -1,0 +1,12 @@
+[Unit]
+Description=Disable Wi-Fi power saving on wlan0
+After=connman.service
+Wants=connman.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/sbin/iw dev wlan0 set power_save off
+
+[Install]
+WantedBy=multi-user.target
