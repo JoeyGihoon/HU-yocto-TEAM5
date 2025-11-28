@@ -13,13 +13,14 @@ IMAGE_INSTALL:append = " \
   weston weston-init \
   wpa-supplicant connman connman-client linux-firmware \
   hu-app bootvideo getty-tty2 \
-  linux-firmware-bcm43430 linux-firmware-bcm43455 wpa-supplicant iw \
+  linux-firmware-bcm43430 linux-firmware-bcm43455 wpa-supplicant iw dhcpcd \
   team5-wifi-config \
   openssl ca-certificates \
   connman-autostart \
-  wifi-powersave-off \
   hu-config tzdata \
 "
+
+IMAGE_INSTALL:remove = " wpa-supplicant"
 
 IMAGE_FEATURES += "splash ssh-server-openssh weston"
 

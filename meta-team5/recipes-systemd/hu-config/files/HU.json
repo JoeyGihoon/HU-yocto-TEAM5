@@ -1,5 +1,5 @@
 {
-  "unicast": "0.0.0.0",
+  "unicast": "192.168.10.2",
 
   "logging": {
     "level": "debug",
@@ -10,12 +10,12 @@
 
   "applications": [
     {
-      "name": "HU-app",
+      "name": "Head_Unit_app",
       "id": "0x1313"
     }
   ],
 
-  "routing": "HU-app",
+  "routing": "Head_Unit_app",
 
   "services": [
     {

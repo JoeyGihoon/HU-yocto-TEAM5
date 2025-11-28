@@ -5,21 +5,31 @@ GearController::GearController(std::shared_ptr<v0::commonapi::ICProxy<>> proxy,
     : QObject(parent)
     , proxy_(std::move(proxy)) {
 
-    if (!proxy_) {
-        std::cout << "[HU] GearController created with null proxy!" << std::endl;
-    } else {
-        std::cout << "[HU] GearController created. Proxy is valid." << std::endl;
+    if (proxy_) {
+        // IC -> HU : 기어 상태 변경 브로드캐스트 구독
+        proxy_->getGearStatusChangedEvent().subscribe(
+            [this](const std::string& gearValue) {
+
+                // CommonAPI 스레드에서 호출될 수 있으니 Qt 스레드로 넘겨줌
+                QMetaObject::invokeMethod(
+                    this,
+                    [this, gearValue]() {
+                        QString qGear = QString::fromStdString(gearValue);
+                        // currentGear_ = qGear;
+                        std::cout << "[HU] gearStatusChanged from IC: "
+                                  << gearValue << std::endl;
+                        emit gearChanged(qGear);
+                    },
+                    Qt::QueuedConnection
+                );
+            }
+        );
     }
 }
 
 void GearController::setGear(const QString& gear) {
     if (!proxy_) {
         std::cout << "[HU] setGear called but proxy is null" << std::endl;
-        return;
-    }
-
-    if (!proxy_->isAvailable()) {
-        std::cout << "[HU] setGear skipped: IC proxy not available yet" << std::endl;
         return;
     }
 

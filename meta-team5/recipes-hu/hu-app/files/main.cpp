@@ -33,11 +33,9 @@ static void initSomeipProxy() {
     }
 
     g_icProxy->getProxyStatusEvent().subscribe([](CommonAPI::AvailabilityStatus s){
-        std::cout << "[HU] IC Proxy status: " << static_cast<int>(s) << std::endl;
+        std::cout << "IC Proxy status: "
+                  << static_cast<int>(s) << std::endl;
     });
-
-    // Block briefly so early gear requests do not race IC availability
-    g_icProxy->isAvailableBlocking();
 }
 
 int main(int argc, char *argv[])

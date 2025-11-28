@@ -16,7 +16,6 @@ TEAM5_WIFI_IPV4 ?= "dhcp"
 TEAM5_WIFI_IPV6 ?= "auto"
 # Extra lines appended verbatim to the generated provisioning file
 TEAM5_WIFI_EXTRA ?= ""
-TEAM5_WIFI_AGENT_POLICY ?= "manual"
 
 do_install[dirs] = "${D}/var/lib/connman"
 
@@ -48,7 +47,6 @@ Hidden = {hidden}
 DeviceName = {device}
 IPv4 = {ipv4}
 IPv6 = {ipv6}
-Agent = {agent_policy}
 """.format(
         name=config_name,
         ssid=ssid,
@@ -59,7 +57,6 @@ Agent = {agent_policy}
         device=dvar('TEAM5_WIFI_DEVICE') or 'wlan0',
         ipv4=dvar('TEAM5_WIFI_IPV4') or 'dhcp',
         ipv6=dvar('TEAM5_WIFI_IPV6') or 'auto',
-        agent_policy=dvar('TEAM5_WIFI_AGENT_POLICY') or 'manual',
     )
 
     extra = (dvar('TEAM5_WIFI_EXTRA') or '').strip()
