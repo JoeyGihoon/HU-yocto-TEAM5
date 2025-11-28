@@ -17,6 +17,32 @@
 
   "routing": "HU-app",
 
+  "services": [
+    {
+      "service": "0x1234",
+      "instance": "0x5678",
+      "unreliable": "30499",
+      "eventgroups": [
+        {
+          "eventgroup": "0x80f3",
+          "events": [
+            "0x9c40",
+            "0x9c41",
+            "0x9c42"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "clients": [
+    {
+      "service": "0x1234",
+      "instance": "0x5678",
+      "unreliable": "30499"
+    }
+  ],
+
   "service-discovery": {
     "enable": "true",
     "multicast": "224.224.224.243",
