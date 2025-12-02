@@ -17,24 +17,7 @@ find_package(Qt5 5.15 REQUIRED COMPONENTS
   QuickControls2
   WebEngine
   WebChannel
-)
-
-# ===== CommonAPI / vsomeip libs =====
-find_package(PkgConfig REQUIRED)
-
-pkg_check_modules(COMMONAPI REQUIRED CommonAPI)
-pkg_check_modules(COMMONAPI_SOMEIP REQUIRED CommonAPI-SomeIP)
-pkg_check_modules(VSOMEIP REQUIRED vsomeip3)
-
-# ===== Generated sources (정적 포함 핵심) =====
-set(COMMUNICATION_SRCGEN_DIR "${CMAKE_SOURCE_DIR}/src-gen")
-
-file(GLOB_RECURSE GEN_CORE_SRCS
-    "${COMMUNICATION_SRCGEN_DIR}/core/v0/commonapi/*.cpp"
-)
-
-file(GLOB_RECURSE GEN_SOMEIP_SRCS
-    "${COMMUNICATION_SRCGEN_DIR}/someip/v0/commonapi/*.cpp"
+  Network
 )
 
 # 2) 실행 파일
@@ -53,30 +36,9 @@ add_executable(appTEAM5_HU
     GearController.h
     GearController.cpp
     qml.qrc
-
-    ${GEN_CORE_SRCS}
-    ${GEN_SOMEIP_SRCS}
 )
 
-# 3) VSOME/IP 관련 설정
-set(COMMUNICATION_SRCGEN_DIR "${CMAKE_SOURCE_DIR}/src-gen")
-target_include_directories(appTEAM5_HU
-  PRIVATE
-    ${COMMUNICATION_SRCGEN_DIR}/core
-    ${COMMUNICATION_SRCGEN_DIR}/someip
-    ${COMMONAPI_INCLUDE_DIRS}
-    ${COMMONAPI_SOMEIP_INCLUDE_DIRS}
-    ${VSOMEIP_INCLUDE_DIRS}
-)
-
-
-# pkg-config가 준 컴파일 옵션도 반영(경고/define 등)
-target_compile_options(appTEAM5_HU PRIVATE
-    ${COMMONAPI_CFLAGS_OTHER}
-    ${COMMONAPI_SOMEIP_CFLAGS_OTHER}
-    ${VSOMEIP_CFLAGS_OTHER}
-)
-
+# 3) VSOME/IP 관련 설정(삭제)
 
 # 4) 링크
 target_link_libraries(appTEAM5_HU
@@ -88,10 +50,8 @@ target_link_libraries(appTEAM5_HU
       Qt5::QuickControls2
       Qt5::WebEngine
       Qt5::WebChannel
+      Qt5::Network
 
-      ${COMMONAPI_LIBRARIES}
-      ${COMMONAPI_SOMEIP_LIBRARIES}
-      ${VSOMEIP_LIBRARIES}
       pthread
 )
 

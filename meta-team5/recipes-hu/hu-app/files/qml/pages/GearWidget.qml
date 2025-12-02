@@ -16,8 +16,23 @@ AppWidget {
 
     signal gearChanged(string gear)
 
+    // 🔹 외부(IC)에서 들어온 기어를 세팅할 때, 다시 IC로 보내지 않도록 플래그
+    property bool _suppressSend: false
+
+    // 🔹 외부에서 호출할 함수 (IC -> HU 반영용)
+    function applyExternalGear(gear) {
+        _suppressSend = true
+        gearPanel.currentGear = gear
+        _suppressSend = false
+    }
+
     // 기어 변경 시 외부로 알려주기
     onCurrentGearChanged: {
+        if (_suppressSend) {
+            // 외부에서 설정한 경우 -> 다시 보내지 않음
+            return
+        }
+
         gearChanged(currentGear)
 
         // C++ main.cpp에서 setContextProperty로 등록한 gearController 호출

@@ -1,0 +1,12 @@
+[Unit]
+Description=Team5: rfkill unblock, enable WiFi, set timezone
+After=multi-user.target connman.service
+Wants=connman.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/team5-setup.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

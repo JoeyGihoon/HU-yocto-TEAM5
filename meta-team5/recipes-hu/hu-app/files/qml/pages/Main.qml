@@ -46,6 +46,15 @@ ApplicationWindow {
         anchors.left: parent.left
         anchors.verticalCenter: parent.verticalCenter
         anchors.verticalCenterOffset: 20
+
+        Component.onCompleted: {
+            if (gearController && gearController.gearReceived) {
+                gearController.gearReceived.connect(function(gear) {
+                    console.log("[HU QML] gearReceived from IC:", gear)
+                    gear_widget.applyExternalGear(gear)
+                })
+            }
+        }
     }
 
     // --- 오른쪽 컨텐츠 영역 ---

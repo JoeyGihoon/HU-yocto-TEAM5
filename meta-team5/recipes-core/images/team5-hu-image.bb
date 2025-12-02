@@ -1,5 +1,5 @@
 SUMMARY = "Team5 HU image (Raspberry Pi 4)"
-LICENSE = "MIT"
+LICENSE = "CLOSED"
 
 inherit core-image
 
@@ -17,7 +17,7 @@ IMAGE_INSTALL:append = " \
   team5-wifi-config \
   openssl ca-certificates \
   connman-autostart \
-  hu-config tzdata \
+  hu-config tzdata team5-setup\
 "
 
 IMAGE_INSTALL:remove = " wpa-supplicant"

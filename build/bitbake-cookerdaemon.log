@@ -17663,3 +17663,927 @@ Server will shut down after all clients exit.
 77153 11:34:19.928733 Exiting (socket: True)
 77153 11:34:19.937689 Exiting as we could obtain the lock
 sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/seame/HU_TEAM5/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+270240 16:29:01.195921 --- Starting bitbake server pid 270240 at 2025-11-28 16:29:01.195910 ---
+270240 16:29:01.196375 Started bitbake server pid 270240
+270240 16:29:01.196484 Entering server connection loop
+270240 16:29:01.196492 Lockfile is: /home/seame/HU_TEAM5/build/bitbake.lock
+Socket is /home/seame/HU_TEAM5/build/bitbake.sock (True)
+270240 16:29:01.196804 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+270240 16:29:01.197109 Processing Client
+270240 16:29:01.197120 Connecting Client
+270240 16:29:01.197264 Running command ['setFeatures', [2, 1]]
+270240 16:29:01.197279 Sending reply (None, None)
+270240 16:29:01.197302 Command Completed (socket: True)
+270240 16:29:01.197766 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/seame/HU_TEAM5/build', 'LOGNAME': 'seame', 'HOME': '/home/seame', 'BBPATH': '/home/seame/HU_TEAM5/build', 'USER': 'seame', 'PATH': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:/opt/ros/humble/bin:/home/seame/.cargo/bin:/home/seame/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/seame-tower:@/tmp/.ICE-unix/3079,unix/seame-tower:/tmp/.ICE-unix/3079', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'OE_ADDED_PATHS': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'ibus', 'ROS_PYTHON_VERSION': '3', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:f3a5ab80-926f-40fb-8e6e-3cde7baa5dfd', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu-xorg', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'SYSTEMD_EXEC_PID': '3106', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'seame', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6800', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'INVOCATION_ID': 'ca6bf1824d104c728f7b7f62b502bbdc', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'MANAGERPID': '2667', 'GJS_DEBUG_OUTPUT': 'stderr', 'UE4_ROOT': '/home/seame/UnrealEngine_4.26', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/seame/HU_TEAM5/poky/bitbake/lib:/home/seame/HU_TEAM5/poky/bitbake/lib:/home/seame/HU_TEAM5/poky/bitbake/lib:/home/seame/HU_TEAM5/poky/bitbake/lib:/home/seame/HU_TEAM5/poky/bitbake/lib:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'IBUS_DISABLE_SNOOPER': '1', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'LC_TIME': 'de_DE.UTF-8', 'JOURNAL_STREAM': '8:39132', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu-xorg', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/seame/HU_TEAM5/build', 'ROS_DISTRO': 'humble', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '186973', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/seame/HU_TEAM5', '_': '/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake'}, ['/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake', 'team5-hu-image']]
+270240 16:29:01.467980 Base config valid
+270240 16:29:01.495413 Sending reply (None, None)
+270240 16:29:01.495636 Command Completed (socket: True)
+270240 16:29:01.495963 Running command ['getVariable', 'BBINCLUDELOGS']
+270240 16:29:01.496069 Sending reply ('yes', None)
+270240 16:29:01.496124 Command Completed (socket: True)
+270240 16:29:01.496526 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+270240 16:29:01.496608 Sending reply (None, None)
+270240 16:29:01.496702 Command Completed (socket: True)
+270240 16:29:01.496932 Running command ['getSetVariable', 'BB_CONSOLELOG']
+270240 16:29:01.497085 Sending reply ('/home/seame/HU_TEAM5/build/tmp/log/cooker/raspberrypi4-64/20251128152901.log', None)
+270240 16:29:01.497147 Command Completed (socket: True)
+270240 16:29:01.497255 Running command ['getSetVariable', 'BB_LOGCONFIG']
+270240 16:29:01.497296 Sending reply (None, None)
+270240 16:29:01.497339 Command Completed (socket: True)
+270240 16:29:01.500427 Running command ['getUIHandlerNum']
+270240 16:29:01.500456 Sending reply (1, None)
+270240 16:29:01.500505 Command Completed (socket: True)
+270240 16:29:01.500849 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+270240 16:29:01.500898 Sending reply (True, None)
+270240 16:29:01.500949 Command Completed (socket: True)
+270240 16:29:01.501069 Running command ['getVariable', 'BB_DEFAULT_TASK']
+270240 16:29:01.501108 Sending reply ('build', None)
+270240 16:29:01.501155 Command Completed (socket: True)
+270240 16:29:01.501262 Running command ['setConfig', 'cmd', 'build']
+270240 16:29:01.501293 Sending reply (None, None)
+270240 16:29:01.501345 Command Completed (socket: True)
+270240 16:29:01.501657 Running command ['buildTargets', ['team5-hu-image'], 'build']
+270240 16:29:01.501760 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7213a7736b90>>
+270240 16:29:01.501779 Sending reply (True, None)
+270240 16:29:01.501828 Command Completed (socket: True)
+270240 16:29:01.509808 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 272243 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 272264 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 273050 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 273313 
+Server will shut down after all clients exit.
+270240 16:29:01.664061 Parse cache valid
+270240 16:29:19.464426 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7213953b3520>
+270240 16:29:19.464448 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7213a7736b90>>
+270240 16:29:30.562127 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7213953b3520> at idleFinish
+270240 16:29:30.813472 Processing Client
+270240 16:29:30.813617 Disconnecting Client (socket: True)
+270240 16:29:30.814045 Parse cache invalidated
+270240 16:29:30.814076 No timeout, exiting.
+270240 16:29:30.914414 Exiting (socket: True)
+270240 16:29:30.922859 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/seame/HU_TEAM5/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+274496 16:31:52.523004 --- Starting bitbake server pid 274496 at 2025-11-28 16:31:52.522997 ---
+274496 16:31:52.523337 Started bitbake server pid 274496
+274496 16:31:52.523405 Entering server connection loop
+274496 16:31:52.523412 Lockfile is: /home/seame/HU_TEAM5/build/bitbake.lock
+Socket is /home/seame/HU_TEAM5/build/bitbake.sock (True)
+274496 16:31:52.523707 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+274496 16:31:52.524102 Processing Client
+274496 16:31:52.524112 Connecting Client
+274496 16:31:52.524205 Running command ['setFeatures', [2, 1]]
+274496 16:31:52.524216 Sending reply (None, None)
+274496 16:31:52.524238 Command Completed (socket: True)
+274496 16:31:52.524709 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/seame/HU_TEAM5/build', 'LOGNAME': 'seame', 'HOME': '/home/seame', 'BBPATH': '/home/seame/HU_TEAM5/build', 'USER': 'seame', 'PATH': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:/opt/ros/humble/bin:/home/seame/.cargo/bin:/home/seame/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/seame-tower:@/tmp/.ICE-unix/3079,unix/seame-tower:/tmp/.ICE-unix/3079', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'OE_ADDED_PATHS': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'ibus', 'ROS_PYTHON_VERSION': '3', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:f3a5ab80-926f-40fb-8e6e-3cde7baa5dfd', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu-xorg', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'SYSTEMD_EXEC_PID': '3106', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'seame', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6800', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'INVOCATION_ID': 'ca6bf1824d104c728f7b7f62b502bbdc', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'MANAGERPID': '2667', 'GJS_DEBUG_OUTPUT': 'stderr', 'UE4_ROOT': '/home/seame/UnrealEngine_4.26', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/seame/HU_TEAM5/poky/bitbake/lib:/home/seame/HU_TEAM5/poky/bitbake/lib:/home/seame/HU_TEAM5/poky/bitbake/lib:/home/seame/HU_TEAM5/poky/bitbake/lib:/home/seame/HU_TEAM5/poky/bitbake/lib:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'IBUS_DISABLE_SNOOPER': '1', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'LC_TIME': 'de_DE.UTF-8', 'JOURNAL_STREAM': '8:39132', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu-xorg', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/seame/HU_TEAM5/build', 'ROS_DISTRO': 'humble', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '186973', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/seame/HU_TEAM5', '_': '/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake'}, ['/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake', 'team5-hu-image']]
+274496 16:31:52.686329 Base config valid
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 275248 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 275271 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 275772 275773 275815 275816 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 275772 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 276293 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 287917 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 287930 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 6
+Client pids: 287969 287981 287984 287987 288058 288174 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 287981 287984 288058 288174 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 287984 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 288381 
+Server will shut down after all clients exit.
+274496 16:31:52.699551 Sending reply (None, None)
+274496 16:31:52.699625 Command Completed (socket: True)
+274496 16:31:52.699807 Running command ['getVariable', 'BBINCLUDELOGS']
+274496 16:31:52.699848 Sending reply ('yes', None)
+274496 16:31:52.699872 Command Completed (socket: True)
+274496 16:31:52.699908 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+274496 16:31:52.699926 Sending reply (None, None)
+274496 16:31:52.699942 Command Completed (socket: True)
+274496 16:31:52.699973 Running command ['getSetVariable', 'BB_CONSOLELOG']
+274496 16:31:52.700025 Sending reply ('/home/seame/HU_TEAM5/build/tmp/log/cooker/raspberrypi4-64/20251128153152.log', None)
+274496 16:31:52.700044 Command Completed (socket: True)
+274496 16:31:52.700061 Running command ['getSetVariable', 'BB_LOGCONFIG']
+274496 16:31:52.700072 Sending reply (None, None)
+274496 16:31:52.700085 Command Completed (socket: True)
+274496 16:31:52.701103 Running command ['getUIHandlerNum']
+274496 16:31:52.701140 Sending reply (1, None)
+274496 16:31:52.701193 Command Completed (socket: True)
+274496 16:31:52.701283 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+274496 16:31:52.701311 Sending reply (True, None)
+274496 16:31:52.701342 Command Completed (socket: True)
+274496 16:31:52.701516 Running command ['getVariable', 'BB_DEFAULT_TASK']
+274496 16:31:52.701554 Sending reply ('build', None)
+274496 16:31:52.701599 Command Completed (socket: True)
+274496 16:31:52.701627 Running command ['setConfig', 'cmd', 'build']
+274496 16:31:52.701642 Sending reply (None, None)
+274496 16:31:52.701665 Command Completed (socket: True)
+274496 16:31:52.701805 Running command ['buildTargets', ['team5-hu-image'], 'build']
+274496 16:31:52.701869 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x718dc203ab90>>
+274496 16:31:52.701875 Sending reply (True, None)
+274496 16:31:52.701909 Command Completed (socket: True)
+274496 16:31:52.724451 Parsing started
+274496 16:31:54.071117 Parse cache valid
+274496 16:31:56.379969 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x718db096bb50>
+274496 16:31:56.379988 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x718dc203ab90>>
+274496 16:33:12.033654 Running command ['ping']
+274496 16:33:12.033728 Sending reply ('Still alive!', None)
+274496 16:33:12.033847 Command Completed (socket: True)
+274496 16:34:20.435981 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x718db096bb50> at idleFinish
+274496 16:34:20.686994 Processing Client
+274496 16:34:20.687126 Disconnecting Client (socket: True)
+274496 16:34:20.687677 Parse cache invalidated
+274496 16:34:20.687723 No timeout, exiting.
+274496 16:34:20.788068 Exiting (socket: True)
+274496 16:34:20.796145 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/seame/HU_TEAM5/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+568385 11:20:12.013155 --- Starting bitbake server pid 568385 at 2025-12-01 11:20:12.013142 ---
+568385 11:20:12.013579 Started bitbake server pid 568385
+568385 11:20:12.013659 Entering server connection loop
+568385 11:20:12.013668 Lockfile is: /home/seame/HU_TEAM5/build/bitbake.lock
+Socket is /home/seame/HU_TEAM5/build/bitbake.sock (True)
+568385 11:20:12.013944 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+568385 11:20:12.014532 Processing Client
+568385 11:20:12.014552 Connecting Client
+568385 11:20:12.014669 Running command ['setFeatures', [2, 1]]
+568385 11:20:12.014684 Sending reply (None, None)
+568385 11:20:12.014708 Command Completed (socket: True)
+568385 11:20:12.015005 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/seame/HU_TEAM5/build', 'LOGNAME': 'seame', 'HOME': '/home/seame', 'BBPATH': '/home/seame/HU_TEAM5/build', 'USER': 'seame', 'PATH': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/seame/.local/bin:/opt/ros/humble/bin:/home/seame/.cargo/bin:/home/seame/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/seame-tower:@/tmp/.ICE-unix/3079,unix/seame-tower:/tmp/.ICE-unix/3079', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.106.2', 'OE_ADDED_PATHS': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'ibus', 'ROS_PYTHON_VERSION': '3', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu-xorg', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'SYSTEMD_EXEC_PID': '3106', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'seame', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'INVOCATION_ID': 'ca6bf1824d104c728f7b7f62b502bbdc', 'MANAGERPID': '2667', 'CHROME_DESKTOP': 'code.desktop', 'GJS_DEBUG_OUTPUT': 'stderr', 'UE4_ROOT': '/home/seame/UnrealEngine_4.26', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/seame/HU_TEAM5/poky/bitbake/lib:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-56089fbc38.sock', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'JOURNAL_STREAM': '8:39132', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu-xorg', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/seame/HU_TEAM5/build', 'ROS_DISTRO': 'humble', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '536606', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/seame/HU_TEAM5', 'TERM_PROGRAM': 'vscode', '_': '/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake'}, ['/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake', 'team5-setup']]
+568385 11:20:12.212352 Base config valid
+568385 11:20:12.227180 Sending reply (None, None)
+568385 11:20:12.227297 Command Completed (socket: True)
+568385 11:20:12.227568 Running command ['getVariable', 'BBINCLUDELOGS']
+568385 11:20:12.227631 Sending reply ('yes', None)
+568385 11:20:12.227666 Command Completed (socket: True)
+568385 11:20:12.227761 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+568385 11:20:12.227785 Sending reply (None, None)
+568385 11:20:12.227812 Command Completed (socket: True)
+568385 11:20:12.227903 Running command ['getSetVariable', 'BB_CONSOLELOG']
+568385 11:20:12.227986 Sending reply ('/home/seame/HU_TEAM5/build/tmp/log/cooker/raspberrypi4-64/20251201102012.log', None)
+568385 11:20:12.228016 Command Completed (socket: True)
+568385 11:20:12.228060 Running command ['getSetVariable', 'BB_LOGCONFIG']
+568385 11:20:12.228083 Sending reply (None, None)
+568385 11:20:12.228109 Command Completed (socket: True)
+568385 11:20:12.229894 Running command ['getUIHandlerNum']
+568385 11:20:12.229948 Sending reply (1, None)
+568385 11:20:12.230003 Command Completed (socket: True)
+568385 11:20:12.230077 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+568385 11:20:12.230095 Sending reply (True, None)
+568385 11:20:12.230122 Command Completed (socket: True)
+568385 11:20:12.230167 Running command ['getVariable', 'BB_DEFAULT_TASK']
+568385 11:20:12.230199 Sending reply ('build', None)
+568385 11:20:12.230224 Command Completed (socket: True)
+568385 11:20:12.230261 Running command ['setConfig', 'cmd', 'build']
+568385 11:20:12.230270 Sending reply (None, None)
+568385 11:20:12.230290 Command Completed (socket: True)
+568385 11:20:12.230332 Running command ['buildTargets', ['team5-setup'], 'build']
+568385 11:20:12.230376 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x702174932b90>>
+568385 11:20:12.230382 Sending reply (True, None)
+568385 11:20:12.230404 Command Completed (socket: True)
+568385 11:20:12.315443 Parsing started
+Process Parser-3:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/seame/HU_TEAM5/poky/bitbake/lib/bb/cooker.py", line 2025, in run
+    self.realrun()
+  File "/home/seame/HU_TEAM5/poky/bitbake/lib/bb/cooker.py", line 2081, in realrun
+    self.results.join_thread()
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 151, in join_thread
+    self._jointhread()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 199, in _finalize_join
+    thread.join()
+  File "/usr/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+  File "/home/seame/HU_TEAM5/poky/bitbake/lib/bb/cooker.py", line 2013, in catch_sig
+    self.handle_sig(signum, frame)
+  File "/home/seame/HU_TEAM5/poky/bitbake/lib/bb/cooker.py", line 2020, in handle_sig
+    signal.default_int_handler(signum, frame)
+KeyboardInterrupt
+568385 11:20:12.571812 Parse cache valid
+568385 11:20:24.768459 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x702174932b90>> at idleFinish
+568385 11:20:25.019583 Processing Client
+568385 11:20:25.019781 Disconnecting Client (socket: True)
+568385 11:20:25.020448 Parse cache invalidated
+568385 11:20:25.020499 No timeout, exiting.
+568385 11:20:25.120750 Exiting (socket: True)
+568385 11:20:25.124625 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/seame/HU_TEAM5/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+568650 11:20:30.752328 --- Starting bitbake server pid 568650 at 2025-12-01 11:20:30.752319 ---
+568650 11:20:30.752703 Started bitbake server pid 568650
+568650 11:20:30.752799 Entering server connection loop
+568650 11:20:30.752809 Lockfile is: /home/seame/HU_TEAM5/build/bitbake.lock
+Socket is /home/seame/HU_TEAM5/build/bitbake.sock (True)
+568650 11:20:30.753189 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+568650 11:20:30.753513 Processing Client
+568650 11:20:30.753534 Connecting Client
+568650 11:20:30.753658 Running command ['setFeatures', [2, 1]]
+568650 11:20:30.753674 Sending reply (None, None)
+568650 11:20:30.753703 Command Completed (socket: True)
+568650 11:20:30.754031 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/seame/HU_TEAM5/build', 'LOGNAME': 'seame', 'HOME': '/home/seame', 'BBPATH': '/home/seame/HU_TEAM5/build', 'USER': 'seame', 'PATH': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/seame/.local/bin:/opt/ros/humble/bin:/home/seame/.cargo/bin:/home/seame/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/seame-tower:@/tmp/.ICE-unix/3079,unix/seame-tower:/tmp/.ICE-unix/3079', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.106.2', 'OE_ADDED_PATHS': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'ibus', 'ROS_PYTHON_VERSION': '3', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu-xorg', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'SYSTEMD_EXEC_PID': '3106', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'seame', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'INVOCATION_ID': 'ca6bf1824d104c728f7b7f62b502bbdc', 'MANAGERPID': '2667', 'CHROME_DESKTOP': 'code.desktop', 'GJS_DEBUG_OUTPUT': 'stderr', 'UE4_ROOT': '/home/seame/UnrealEngine_4.26', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/seame/HU_TEAM5/poky/bitbake/lib:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-56089fbc38.sock', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'JOURNAL_STREAM': '8:39132', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu-xorg', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/seame/HU_TEAM5/build', 'ROS_DISTRO': 'humble', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '536606', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/seame/HU_TEAM5', 'TERM_PROGRAM': 'vscode', '_': '/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake'}, ['/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake', 'team5-setup']]
+568650 11:20:30.923417 Base config valid
+568650 11:20:30.935957 Sending reply (None, None)
+568650 11:20:30.936095 Command Completed (socket: True)
+568650 11:20:30.936247 Running command ['getVariable', 'BBINCLUDELOGS']
+568650 11:20:30.936311 Sending reply ('yes', None)
+568650 11:20:30.936346 Command Completed (socket: True)
+568650 11:20:30.936398 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+568650 11:20:30.936421 Sending reply (None, None)
+568650 11:20:30.936453 Command Completed (socket: True)
+568650 11:20:30.936498 Running command ['getSetVariable', 'BB_CONSOLELOG']
+568650 11:20:30.936586 Sending reply ('/home/seame/HU_TEAM5/build/tmp/log/cooker/raspberrypi4-64/20251201102030.log', None)
+568650 11:20:30.936621 Command Completed (socket: True)
+568650 11:20:30.936662 Running command ['getSetVariable', 'BB_LOGCONFIG']
+568650 11:20:30.936685 Sending reply (None, None)
+568650 11:20:30.936716 Command Completed (socket: True)
+568650 11:20:30.938048 Running command ['getUIHandlerNum']
+568650 11:20:30.938067 Sending reply (1, None)
+568650 11:20:30.938096 Command Completed (socket: True)
+568650 11:20:30.938157 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+568650 11:20:30.938176 Sending reply (True, None)
+568650 11:20:30.938209 Command Completed (socket: True)
+568650 11:20:30.938257 Running command ['getVariable', 'BB_DEFAULT_TASK']
+568650 11:20:30.938278 Sending reply ('build', None)
+568650 11:20:30.938306 Command Completed (socket: True)
+568650 11:20:30.938349 Running command ['setConfig', 'cmd', 'build']
+568650 11:20:30.938362 Sending reply (None, None)
+568650 11:20:30.938388 Command Completed (socket: True)
+568650 11:20:30.938434 Running command ['buildTargets', ['team5-setup'], 'build']
+568650 11:20:30.938486 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7bc738b42b90>>
+568650 11:20:30.938493 Sending reply (True, None)
+568650 11:20:30.938519 Command Completed (socket: True)
+568650 11:20:30.953615 Parsing started
+Process Parser-24:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/seame/HU_TEAM5/poky/bitbake/lib/bb/cooker.py", line 2025, in run
+    self.realrun()
+  File "/home/seame/HU_TEAM5/poky/bitbake/lib/bb/cooker.py", line 2081, in realrun
+    self.results.join_thread()
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 151, in join_thread
+    self._jointhread()
+  File "/usr/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 199, in _finalize_join
+    thread.join()
+  File "/usr/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+  File "/home/seame/HU_TEAM5/poky/bitbake/lib/bb/cooker.py", line 2013, in catch_sig
+    self.handle_sig(signum, frame)
+  File "/home/seame/HU_TEAM5/poky/bitbake/lib/bb/cooker.py", line 2020, in handle_sig
+    signal.default_int_handler(signum, frame)
+KeyboardInterrupt
+568650 11:20:31.433940 Parse cache valid
+568650 11:20:43.637816 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7bc738b42b90>> at idleFinish
+568650 11:20:43.888884 Processing Client
+568650 11:20:43.889098 Disconnecting Client (socket: True)
+568650 11:20:43.889654 Parse cache invalidated
+568650 11:20:43.889687 No timeout, exiting.
+568650 11:20:43.990061 Exiting (socket: True)
+568650 11:20:44.028115 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/seame/HU_TEAM5/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+569108 11:21:22.734034 --- Starting bitbake server pid 569108 at 2025-12-01 11:21:22.734026 ---
+569108 11:21:22.734362 Started bitbake server pid 569108
+569108 11:21:22.734427 Entering server connection loop
+569108 11:21:22.734434 Lockfile is: /home/seame/HU_TEAM5/build/bitbake.lock
+Socket is /home/seame/HU_TEAM5/build/bitbake.sock (True)
+569108 11:21:22.734752 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+569108 11:21:22.735075 Processing Client
+569108 11:21:22.735086 Connecting Client
+569108 11:21:22.735190 Running command ['setFeatures', [2, 1]]
+569108 11:21:22.735203 Sending reply (None, None)
+569108 11:21:22.735226 Command Completed (socket: True)
+569108 11:21:22.735863 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/seame/HU_TEAM5/build', 'LOGNAME': 'seame', 'HOME': '/home/seame', 'BBPATH': '/home/seame/HU_TEAM5/build', 'USER': 'seame', 'PATH': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/seame/.local/bin:/opt/ros/humble/bin:/home/seame/.cargo/bin:/home/seame/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/seame-tower:@/tmp/.ICE-unix/3079,unix/seame-tower:/tmp/.ICE-unix/3079', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.106.2', 'OE_ADDED_PATHS': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'ibus', 'ROS_PYTHON_VERSION': '3', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu-xorg', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'SYSTEMD_EXEC_PID': '3106', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'seame', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'INVOCATION_ID': 'ca6bf1824d104c728f7b7f62b502bbdc', 'MANAGERPID': '2667', 'CHROME_DESKTOP': 'code.desktop', 'GJS_DEBUG_OUTPUT': 'stderr', 'UE4_ROOT': '/home/seame/UnrealEngine_4.26', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/seame/HU_TEAM5/poky/bitbake/lib:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-56089fbc38.sock', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'JOURNAL_STREAM': '8:39132', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu-xorg', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/seame/HU_TEAM5/build', 'ROS_DISTRO': 'humble', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '536606', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/seame/HU_TEAM5', 'TERM_PROGRAM': 'vscode', '_': '/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake'}, ['/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake', 'team5-setup']]
+569108 11:21:22.896213 Base config valid
+569108 11:21:22.908433 Sending reply (None, None)
+569108 11:21:22.908554 Command Completed (socket: True)
+569108 11:21:22.908749 Running command ['getVariable', 'BBINCLUDELOGS']
+569108 11:21:22.908811 Sending reply ('yes', None)
+569108 11:21:22.908846 Command Completed (socket: True)
+569108 11:21:22.908967 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+569108 11:21:22.908987 Sending reply (None, None)
+569108 11:21:22.909015 Command Completed (socket: True)
+569108 11:21:22.909103 Running command ['getSetVariable', 'BB_CONSOLELOG']
+569108 11:21:22.909193 Sending reply ('/home/seame/HU_TEAM5/build/tmp/log/cooker/raspberrypi4-64/20251201102122.log', None)
+569108 11:21:22.909224 Command Completed (socket: True)
+569108 11:21:22.909378 Running command ['getSetVariable', 'BB_LOGCONFIG']
+569108 11:21:22.909403 Sending reply (None, None)
+569108 11:21:22.909438 Command Completed (socket: True)
+569108 11:21:22.910809 Running command ['getUIHandlerNum']
+569108 11:21:22.910832 Sending reply (1, None)
+569108 11:21:22.910867 Command Completed (socket: True)
+569108 11:21:22.910937 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+569108 11:21:22.910957 Sending reply (True, None)
+569108 11:21:22.910986 Command Completed (socket: True)
+569108 11:21:22.911036 Running command ['getVariable', 'BB_DEFAULT_TASK']
+569108 11:21:22.911056 Sending reply ('build', None)
+569108 11:21:22.911083 Command Completed (socket: True)
+569108 11:21:22.911128 Running command ['setConfig', 'cmd', 'build']
+569108 11:21:22.911144 Sending reply (None, None)
+569108 11:21:22.911169 Command Completed (socket: True)
+569108 11:21:22.911299 Running command ['buildTargets', ['team5-setup'], 'build']
+569108 11:21:22.911358 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7ec77622eb90>>
+569108 11:21:22.911366 Sending reply (True, None)
+569108 11:21:22.911398 Command Completed (socket: True)
+569108 11:21:22.935376 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 569951 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 569969 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 570495 570496 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 570495 
+Server will shut down after all clients exit.
+569108 11:21:23.472311 Parse cache valid
+569108 11:21:40.510486 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7ec7640d79a0>
+569108 11:21:40.510519 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7ec77622eb90>>
+569108 11:21:45.247590 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7ec7640d79a0> at idleFinish
+569108 11:21:45.498874 Processing Client
+569108 11:21:45.499032 Disconnecting Client (socket: True)
+569108 11:21:45.499507 Parse cache invalidated
+569108 11:21:45.499535 No timeout, exiting.
+569108 11:21:45.599825 Exiting (socket: True)
+569108 11:21:45.608472 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/seame/HU_TEAM5/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+571857 11:24:04.587620 --- Starting bitbake server pid 571857 at 2025-12-01 11:24:04.587612 ---
+571857 11:24:04.587969 Started bitbake server pid 571857
+571857 11:24:04.588065 Entering server connection loop
+571857 11:24:04.588072 Lockfile is: /home/seame/HU_TEAM5/build/bitbake.lock
+Socket is /home/seame/HU_TEAM5/build/bitbake.sock (True)
+571857 11:24:04.588518 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+571857 11:24:04.588756 Processing Client
+571857 11:24:04.588776 Connecting Client
+571857 11:24:04.588887 Running command ['setFeatures', [2, 1]]
+571857 11:24:04.588900 Sending reply (None, None)
+571857 11:24:04.588923 Command Completed (socket: True)
+571857 11:24:04.589244 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/seame/HU_TEAM5/build', 'LOGNAME': 'seame', 'HOME': '/home/seame', 'BBPATH': '/home/seame/HU_TEAM5/build', 'USER': 'seame', 'PATH': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/seame/.local/bin:/opt/ros/humble/bin:/home/seame/.cargo/bin:/home/seame/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/seame-tower:@/tmp/.ICE-unix/3079,unix/seame-tower:/tmp/.ICE-unix/3079', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.106.2', 'OE_ADDED_PATHS': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'ibus', 'ROS_PYTHON_VERSION': '3', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu-xorg', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'SYSTEMD_EXEC_PID': '3106', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'seame', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'INVOCATION_ID': 'ca6bf1824d104c728f7b7f62b502bbdc', 'MANAGERPID': '2667', 'CHROME_DESKTOP': 'code.desktop', 'GJS_DEBUG_OUTPUT': 'stderr', 'UE4_ROOT': '/home/seame/UnrealEngine_4.26', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/seame/HU_TEAM5/poky/bitbake/lib:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-56089fbc38.sock', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'JOURNAL_STREAM': '8:39132', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu-xorg', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/seame/HU_TEAM5/build', 'ROS_DISTRO': 'humble', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '536606', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/seame/HU_TEAM5', 'TERM_PROGRAM': 'vscode', '_': '/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake'}, ['/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake', 'team5-hu-image']]
+571857 11:24:04.760202 Base config valid
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 572302 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 584158 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 584181 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 6
+Client pids: 584228 584231 584234 584237 584420 584279 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 584231 584234 584420 584279 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 584231 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 584668 
+Server will shut down after all clients exit.
+571857 11:24:04.770764 Sending reply (None, None)
+571857 11:24:04.770841 Command Completed (socket: True)
+571857 11:24:04.771045 Running command ['getVariable', 'BBINCLUDELOGS']
+571857 11:24:04.771078 Sending reply ('yes', None)
+571857 11:24:04.771094 Command Completed (socket: True)
+571857 11:24:04.771188 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+571857 11:24:04.771211 Sending reply (None, None)
+571857 11:24:04.771248 Command Completed (socket: True)
+571857 11:24:04.771539 Running command ['getSetVariable', 'BB_CONSOLELOG']
+571857 11:24:04.771605 Sending reply ('/home/seame/HU_TEAM5/build/tmp/log/cooker/raspberrypi4-64/20251201102404.log', None)
+571857 11:24:04.771631 Command Completed (socket: True)
+571857 11:24:04.771776 Running command ['getSetVariable', 'BB_LOGCONFIG']
+571857 11:24:04.771799 Sending reply (None, None)
+571857 11:24:04.771825 Command Completed (socket: True)
+571857 11:24:04.772928 Running command ['getUIHandlerNum']
+571857 11:24:04.772946 Sending reply (1, None)
+571857 11:24:04.772971 Command Completed (socket: True)
+571857 11:24:04.773079 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+571857 11:24:04.773101 Sending reply (True, None)
+571857 11:24:04.773132 Command Completed (socket: True)
+571857 11:24:04.773194 Running command ['getVariable', 'BB_DEFAULT_TASK']
+571857 11:24:04.773207 Sending reply ('build', None)
+571857 11:24:04.773248 Command Completed (socket: True)
+571857 11:24:04.773478 Running command ['setConfig', 'cmd', 'build']
+571857 11:24:04.773494 Sending reply (None, None)
+571857 11:24:04.773519 Command Completed (socket: True)
+571857 11:24:04.773581 Running command ['buildTargets', ['team5-hu-image'], 'build']
+571857 11:24:04.773612 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x77626903ab90>>
+571857 11:24:04.773615 Sending reply (True, None)
+571857 11:24:04.773632 Command Completed (socket: True)
+571857 11:24:04.788852 Parsing started
+571857 11:24:06.171991 Parse cache valid
+571857 11:24:08.558643 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x776253cf3be0>
+571857 11:24:08.558665 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x77626903ab90>>
+571857 11:25:18.131101 Running command ['ping']
+571857 11:25:18.131147 Sending reply ('Still alive!', None)
+571857 11:25:18.131219 Command Completed (socket: True)
+571857 11:26:26.590524 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x776253cf3be0> at idleFinish
+571857 11:26:26.841593 Processing Client
+571857 11:26:26.841727 Disconnecting Client (socket: True)
+571857 11:26:26.842162 Parse cache invalidated
+571857 11:26:26.842208 No timeout, exiting.
+571857 11:26:26.942574 Exiting (socket: True)
+571857 11:26:26.951847 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/seame/HU_TEAM5/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+644561 13:53:42.323230 --- Starting bitbake server pid 644561 at 2025-12-01 13:53:42.323223 ---
+644561 13:53:42.323562 Started bitbake server pid 644561
+644561 13:53:42.323631 Entering server connection loop
+644561 13:53:42.323638 Lockfile is: /home/seame/HU_TEAM5/build/bitbake.lock
+Socket is /home/seame/HU_TEAM5/build/bitbake.sock (True)
+644561 13:53:42.323916 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+644561 13:53:42.324553 Processing Client
+644561 13:53:42.324570 Connecting Client
+644561 13:53:42.324677 Running command ['setFeatures', [2, 1]]
+644561 13:53:42.324689 Sending reply (None, None)
+644561 13:53:42.324711 Command Completed (socket: True)
+644561 13:53:42.325045 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/seame/HU_TEAM5/build', 'LOGNAME': 'seame', 'HOME': '/home/seame', 'BBPATH': '/home/seame/HU_TEAM5/build', 'USER': 'seame', 'PATH': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/seame/.local/bin:/opt/ros/humble/bin:/home/seame/.cargo/bin:/home/seame/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/seame-tower:@/tmp/.ICE-unix/3079,unix/seame-tower:/tmp/.ICE-unix/3079', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.106.2', 'OE_ADDED_PATHS': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'ibus', 'ROS_PYTHON_VERSION': '3', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu-xorg', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'SYSTEMD_EXEC_PID': '3106', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'seame', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'INVOCATION_ID': 'ca6bf1824d104c728f7b7f62b502bbdc', 'MANAGERPID': '2667', 'CHROME_DESKTOP': 'code.desktop', 'GJS_DEBUG_OUTPUT': 'stderr', 'UE4_ROOT': '/home/seame/UnrealEngine_4.26', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/seame/HU_TEAM5/poky/bitbake/lib:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-56089fbc38.sock', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'JOURNAL_STREAM': '8:39132', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu-xorg', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/seame/HU_TEAM5/build', 'ROS_DISTRO': 'humble', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '536606', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/seame/HU_TEAM5', 'TERM_PROGRAM': 'vscode', '_': '/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake'}, ['/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake', 'team5-hu-image']]
+644561 13:53:42.490260 Base config valid
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 645287 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 645320 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 645831 645832 645977 645979 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 645831 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 646345 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 658305 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 658317 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 6
+Client pids: 658359 658371 658374 658387 658470 658576 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 658371 658374 658470 658576 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 658374 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 658825 
+Server will shut down after all clients exit.
+644561 13:53:42.502662 Sending reply (None, None)
+644561 13:53:42.502782 Command Completed (socket: True)
+644561 13:53:42.502944 Running command ['getVariable', 'BBINCLUDELOGS']
+644561 13:53:42.503009 Sending reply ('yes', None)
+644561 13:53:42.503043 Command Completed (socket: True)
+644561 13:53:42.503133 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+644561 13:53:42.503152 Sending reply (None, None)
+644561 13:53:42.503189 Command Completed (socket: True)
+644561 13:53:42.503333 Running command ['getSetVariable', 'BB_CONSOLELOG']
+644561 13:53:42.503425 Sending reply ('/home/seame/HU_TEAM5/build/tmp/log/cooker/raspberrypi4-64/20251201125342.log', None)
+644561 13:53:42.503463 Command Completed (socket: True)
+644561 13:53:42.503587 Running command ['getSetVariable', 'BB_LOGCONFIG']
+644561 13:53:42.503617 Sending reply (None, None)
+644561 13:53:42.503651 Command Completed (socket: True)
+644561 13:53:42.504977 Running command ['getUIHandlerNum']
+644561 13:53:42.504997 Sending reply (1, None)
+644561 13:53:42.505025 Command Completed (socket: True)
+644561 13:53:42.505089 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+644561 13:53:42.505109 Sending reply (True, None)
+644561 13:53:42.505135 Command Completed (socket: True)
+644561 13:53:42.505188 Running command ['getVariable', 'BB_DEFAULT_TASK']
+644561 13:53:42.505205 Sending reply ('build', None)
+644561 13:53:42.505231 Command Completed (socket: True)
+644561 13:53:42.505331 Running command ['setConfig', 'cmd', 'build']
+644561 13:53:42.505345 Sending reply (None, None)
+644561 13:53:42.505369 Command Completed (socket: True)
+644561 13:53:42.505420 Running command ['buildTargets', ['team5-hu-image'], 'build']
+644561 13:53:42.505466 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f0f8283ab90>>
+644561 13:53:42.505472 Sending reply (True, None)
+644561 13:53:42.505497 Command Completed (socket: True)
+644561 13:53:42.524708 Parsing started
+644561 13:53:43.863614 Parse cache valid
+644561 13:53:45.898306 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7f0f6d0fbeb0>
+644561 13:53:45.898328 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7f0f8283ab90>>
+644561 13:55:01.767922 Running command ['ping']
+644561 13:55:01.768006 Sending reply ('Still alive!', None)
+644561 13:55:01.768144 Command Completed (socket: True)
+644561 13:56:09.725733 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7f0f6d0fbeb0> at idleFinish
+644561 13:56:09.976829 Processing Client
+644561 13:56:09.976974 Disconnecting Client (socket: True)
+644561 13:56:09.977474 Parse cache invalidated
+644561 13:56:09.977506 No timeout, exiting.
+644561 13:56:10.077882 Exiting (socket: True)
+644561 13:56:10.087688 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/seame/HU_TEAM5/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+678009 14:43:42.662032 --- Starting bitbake server pid 678009 at 2025-12-01 14:43:42.662024 ---
+678009 14:43:42.662371 Started bitbake server pid 678009
+678009 14:43:42.662438 Entering server connection loop
+678009 14:43:42.662445 Lockfile is: /home/seame/HU_TEAM5/build/bitbake.lock
+Socket is /home/seame/HU_TEAM5/build/bitbake.sock (True)
+678009 14:43:42.662782 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+678009 14:43:42.663122 Processing Client
+678009 14:43:42.663132 Connecting Client
+678009 14:43:42.663227 Running command ['setFeatures', [2, 1]]
+678009 14:43:42.663240 Sending reply (None, None)
+678009 14:43:42.663262 Command Completed (socket: True)
+678009 14:43:42.663662 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/seame/HU_TEAM5/build', 'LOGNAME': 'seame', 'HOME': '/home/seame', 'BBPATH': '/home/seame/HU_TEAM5/build', 'USER': 'seame', 'PATH': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/seame/.local/bin:/opt/ros/humble/bin:/home/seame/.cargo/bin:/home/seame/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/seame-tower:@/tmp/.ICE-unix/3079,unix/seame-tower:/tmp/.ICE-unix/3079', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.106.2', 'OE_ADDED_PATHS': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'ibus', 'ROS_PYTHON_VERSION': '3', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu-xorg', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'SYSTEMD_EXEC_PID': '3106', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'seame', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'INVOCATION_ID': 'ca6bf1824d104c728f7b7f62b502bbdc', 'MANAGERPID': '2667', 'CHROME_DESKTOP': 'code.desktop', 'GJS_DEBUG_OUTPUT': 'stderr', 'UE4_ROOT': '/home/seame/UnrealEngine_4.26', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/seame/HU_TEAM5/poky/bitbake/lib:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-56089fbc38.sock', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'JOURNAL_STREAM': '8:39132', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu-xorg', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/seame/HU_TEAM5/build', 'ROS_DISTRO': 'humble', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '536606', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/seame/HU_TEAM5', 'TERM_PROGRAM': 'vscode', '_': '/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake'}, ['/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake', 'team5-hu-image']]
+678009 14:43:42.826995 Base config valid
+678009 14:43:42.889743 Sending reply (None, None)
+678009 14:43:42.889886 Command Completed (socket: True)
+678009 14:43:42.890118 Running command ['getVariable', 'BBINCLUDELOGS']
+678009 14:43:42.890192 Sending reply ('yes', None)
+678009 14:43:42.890230 Command Completed (socket: True)
+678009 14:43:42.890509 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+678009 14:43:42.890555 Sending reply (None, None)
+678009 14:43:42.890607 Command Completed (socket: True)
+678009 14:43:42.890753 Running command ['getSetVariable', 'BB_CONSOLELOG']
+678009 14:43:42.890848 Sending reply ('/home/seame/HU_TEAM5/build/tmp/log/cooker/raspberrypi4-64/20251201134342.log', None)
+678009 14:43:42.890883 Command Completed (socket: True)
+678009 14:43:42.891019 Running command ['getSetVariable', 'BB_LOGCONFIG']
+678009 14:43:42.891039 Sending reply (None, None)
+678009 14:43:42.891065 Command Completed (socket: True)
+678009 14:43:42.892685 Running command ['getUIHandlerNum']
+678009 14:43:42.892724 Sending reply (1, None)
+678009 14:43:42.892778 Command Completed (socket: True)
+678009 14:43:42.892950 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+678009 14:43:42.892971 Sending reply (True, None)
+678009 14:43:42.893001 Command Completed (socket: True)
+678009 14:43:42.893066 Running command ['getVariable', 'BB_DEFAULT_TASK']
+678009 14:43:42.893095 Sending reply ('build', None)
+678009 14:43:42.893121 Command Completed (socket: True)
+678009 14:43:42.893163 Running command ['setConfig', 'cmd', 'build']
+678009 14:43:42.893177 Sending reply (None, None)
+678009 14:43:42.893208 Command Completed (socket: True)
+678009 14:43:42.893349 Running command ['buildTargets', ['team5-hu-image'], 'build']
+678009 14:43:42.893423 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x79ee9d62eb90>>
+678009 14:43:42.893432 Sending reply (True, None)
+678009 14:43:42.893481 Command Completed (socket: True)
+678009 14:43:42.966161 Parsing started
+678009 14:43:44.342357 Parse cache valid
+678009 14:43:44.892488 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x79ee9d62eb90>> at idleFinish
+678009 14:43:45.144033 Processing Client
+678009 14:43:45.144416 Disconnecting Client (socket: True)
+678009 14:43:45.145029 Parse cache invalidated
+678009 14:43:45.145068 No timeout, exiting.
+678009 14:43:45.245443 Exiting (socket: True)
+678009 14:43:45.284512 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/seame/HU_TEAM5/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+678283 14:44:18.099714 --- Starting bitbake server pid 678283 at 2025-12-01 14:44:18.099705 ---
+678283 14:44:18.100055 Started bitbake server pid 678283
+678283 14:44:18.100146 Entering server connection loop
+678283 14:44:18.100155 Lockfile is: /home/seame/HU_TEAM5/build/bitbake.lock
+Socket is /home/seame/HU_TEAM5/build/bitbake.sock (True)
+678283 14:44:18.100543 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+678283 14:44:18.100796 Processing Client
+678283 14:44:18.100811 Connecting Client
+678283 14:44:18.100919 Running command ['setFeatures', [2, 1]]
+678283 14:44:18.100932 Sending reply (None, None)
+678283 14:44:18.100956 Command Completed (socket: True)
+678283 14:44:18.101310 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/seame/HU_TEAM5/build', 'LOGNAME': 'seame', 'HOME': '/home/seame', 'BBPATH': '/home/seame/HU_TEAM5/build', 'USER': 'seame', 'PATH': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/seame/.local/bin:/opt/ros/humble/bin:/home/seame/.cargo/bin:/home/seame/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/seame-tower:@/tmp/.ICE-unix/3079,unix/seame-tower:/tmp/.ICE-unix/3079', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.106.2', 'OE_ADDED_PATHS': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'ibus', 'ROS_PYTHON_VERSION': '3', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu-xorg', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'SYSTEMD_EXEC_PID': '3106', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'seame', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'INVOCATION_ID': 'ca6bf1824d104c728f7b7f62b502bbdc', 'MANAGERPID': '2667', 'CHROME_DESKTOP': 'code.desktop', 'GJS_DEBUG_OUTPUT': 'stderr', 'UE4_ROOT': '/home/seame/UnrealEngine_4.26', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/seame/HU_TEAM5/poky/bitbake/lib:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-56089fbc38.sock', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'JOURNAL_STREAM': '8:39132', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu-xorg', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/seame/HU_TEAM5/build', 'ROS_DISTRO': 'humble', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '536606', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/seame/HU_TEAM5', 'TERM_PROGRAM': 'vscode', '_': '/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake'}, ['/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake', 'team5-hu-image']]
+678283 14:44:18.275737 Base config valid
+678283 14:44:18.287670 Sending reply (None, None)
+678283 14:44:18.287802 Command Completed (socket: True)
+678283 14:44:18.287967 Running command ['getVariable', 'BBINCLUDELOGS']
+678283 14:44:18.288037 Sending reply ('yes', None)
+678283 14:44:18.288070 Command Completed (socket: True)
+678283 14:44:18.288162 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+678283 14:44:18.288182 Sending reply (None, None)
+678283 14:44:18.288220 Command Completed (socket: True)
+678283 14:44:18.288392 Running command ['getSetVariable', 'BB_CONSOLELOG']
+678283 14:44:18.288483 Sending reply ('/home/seame/HU_TEAM5/build/tmp/log/cooker/raspberrypi4-64/20251201134418.log', None)
+678283 14:44:18.288520 Command Completed (socket: True)
+678283 14:44:18.288640 Running command ['getSetVariable', 'BB_LOGCONFIG']
+678283 14:44:18.288665 Sending reply (None, None)
+678283 14:44:18.288700 Command Completed (socket: True)
+678283 14:44:18.290284 Running command ['getUIHandlerNum']
+678283 14:44:18.290323 Sending reply (1, None)
+678283 14:44:18.290370 Command Completed (socket: True)
+678283 14:44:18.290562 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+678283 14:44:18.290596 Sending reply (True, None)
+678283 14:44:18.290645 Command Completed (socket: True)
+678283 14:44:18.290716 Running command ['getVariable', 'BB_DEFAULT_TASK']
+678283 14:44:18.290747 Sending reply ('build', None)
+678283 14:44:18.290788 Command Completed (socket: True)
+678283 14:44:18.290847 Running command ['setConfig', 'cmd', 'build']
+678283 14:44:18.290866 Sending reply (None, None)
+678283 14:44:18.290902 Command Completed (socket: True)
+678283 14:44:18.290965 Running command ['buildTargets', ['team5-hu-image'], 'build']
+678283 14:44:18.291031 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7dfc42742b90>>
+678283 14:44:18.291039 Sending reply (True, None)
+678283 14:44:18.291075 Command Completed (socket: True)
+678283 14:44:18.301068 Parsing started
+678283 14:44:19.725563 Parse cache valid
+678283 14:44:20.265561 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7dfc42742b90>> at idleFinish
+678283 14:44:20.517160 Processing Client
+678283 14:44:20.517422 Disconnecting Client (socket: True)
+678283 14:44:20.518222 Parse cache invalidated
+678283 14:44:20.518283 No timeout, exiting.
+678283 14:44:20.618761 Exiting (socket: True)
+678283 14:44:20.627578 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/seame/HU_TEAM5/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+678419 14:44:32.141607 --- Starting bitbake server pid 678419 at 2025-12-01 14:44:32.141599 ---
+678419 14:44:32.141965 Started bitbake server pid 678419
+678419 14:44:32.142051 Entering server connection loop
+678419 14:44:32.142059 Lockfile is: /home/seame/HU_TEAM5/build/bitbake.lock
+Socket is /home/seame/HU_TEAM5/build/bitbake.sock (True)
+678419 14:44:32.142551 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+678419 14:44:32.142884 Processing Client
+678419 14:44:32.142904 Connecting Client
+678419 14:44:32.143020 Running command ['setFeatures', [2, 1]]
+678419 14:44:32.143033 Sending reply (None, None)
+678419 14:44:32.143058 Command Completed (socket: True)
+678419 14:44:32.143444 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/seame/HU_TEAM5/build', 'LOGNAME': 'seame', 'HOME': '/home/seame', 'BBPATH': '/home/seame/HU_TEAM5/build', 'USER': 'seame', 'PATH': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/seame/.local/bin:/opt/ros/humble/bin:/home/seame/.cargo/bin:/home/seame/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/seame-tower:@/tmp/.ICE-unix/3079,unix/seame-tower:/tmp/.ICE-unix/3079', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.106.2', 'OE_ADDED_PATHS': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'ibus', 'ROS_PYTHON_VERSION': '3', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu-xorg', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'SYSTEMD_EXEC_PID': '3106', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'seame', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'INVOCATION_ID': 'ca6bf1824d104c728f7b7f62b502bbdc', 'MANAGERPID': '2667', 'CHROME_DESKTOP': 'code.desktop', 'GJS_DEBUG_OUTPUT': 'stderr', 'UE4_ROOT': '/home/seame/UnrealEngine_4.26', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/seame/HU_TEAM5/poky/bitbake/lib:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-56089fbc38.sock', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'JOURNAL_STREAM': '8:39132', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu-xorg', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/seame/HU_TEAM5/build', 'ROS_DISTRO': 'humble', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '536606', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/seame/HU_TEAM5', 'TERM_PROGRAM': 'vscode', '_': '/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake'}, ['/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake', 'team5-hu-image']]
+678419 14:44:32.313074 Base config valid
+678419 14:44:32.325907 Sending reply (None, None)
+678419 14:44:32.326028 Command Completed (socket: True)
+678419 14:44:32.326191 Running command ['getVariable', 'BBINCLUDELOGS']
+678419 14:44:32.326250 Sending reply ('yes', None)
+678419 14:44:32.326283 Command Completed (socket: True)
+678419 14:44:32.326467 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+678419 14:44:32.326491 Sending reply (None, None)
+678419 14:44:32.326525 Command Completed (socket: True)
+678419 14:44:32.326657 Running command ['getSetVariable', 'BB_CONSOLELOG']
+678419 14:44:32.326742 Sending reply ('/home/seame/HU_TEAM5/build/tmp/log/cooker/raspberrypi4-64/20251201134432.log', None)
+678419 14:44:32.326779 Command Completed (socket: True)
+678419 14:44:32.326867 Running command ['getSetVariable', 'BB_LOGCONFIG']
+678419 14:44:32.326886 Sending reply (None, None)
+678419 14:44:32.326915 Command Completed (socket: True)
+678419 14:44:32.328939 Running command ['getUIHandlerNum']
+678419 14:44:32.328984 Sending reply (1, None)
+678419 14:44:32.329057 Command Completed (socket: True)
+678419 14:44:32.329197 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+678419 14:44:32.329235 Sending reply (True, None)
+678419 14:44:32.329299 Command Completed (socket: True)
+678419 14:44:32.329522 Running command ['getVariable', 'BB_DEFAULT_TASK']
+678419 14:44:32.329574 Sending reply ('build', None)
+678419 14:44:32.329649 Command Completed (socket: True)
+678419 14:44:32.329806 Running command ['setConfig', 'cmd', 'build']
+678419 14:44:32.329839 Sending reply (None, None)
+678419 14:44:32.329900 Command Completed (socket: True)
+678419 14:44:32.330012 Running command ['buildTargets', ['team5-hu-image'], 'build']
+678419 14:44:32.330128 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7dbd8462ab90>>
+678419 14:44:32.330142 Sending reply (True, None)
+678419 14:44:32.330213 Command Completed (socket: True)
+678419 14:44:32.343201 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 679052 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 679131 
+Server will shut down after all clients exit.
+678419 14:44:33.840657 Parse cache valid
+678419 14:44:36.073534 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7dbd6ef43c70>
+678419 14:44:36.073559 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7dbd8462ab90>>
+678419 14:44:45.965840 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7dbd6ef43c70> at idleFinish
+678419 14:44:46.216884 Processing Client
+678419 14:44:46.217056 Disconnecting Client (socket: True)
+678419 14:44:46.217561 Parse cache invalidated
+678419 14:44:46.217592 No timeout, exiting.
+678419 14:44:46.317819 Exiting (socket: True)
+678419 14:44:46.323284 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/seame/HU_TEAM5/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+680318 14:46:40.943277 --- Starting bitbake server pid 680318 at 2025-12-01 14:46:40.943268 ---
+680318 14:46:40.943626 Started bitbake server pid 680318
+680318 14:46:40.943695 Entering server connection loop
+680318 14:46:40.943702 Lockfile is: /home/seame/HU_TEAM5/build/bitbake.lock
+Socket is /home/seame/HU_TEAM5/build/bitbake.sock (True)
+680318 14:46:40.944016 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+680318 14:46:40.944583 Processing Client
+680318 14:46:40.944602 Connecting Client
+680318 14:46:40.944713 Running command ['setFeatures', [2, 1]]
+680318 14:46:40.944726 Sending reply (None, None)
+680318 14:46:40.944748 Command Completed (socket: True)
+680318 14:46:40.945122 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/seame/HU_TEAM5/build', 'LOGNAME': 'seame', 'HOME': '/home/seame', 'BBPATH': '/home/seame/HU_TEAM5/build', 'USER': 'seame', 'PATH': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/seame/.local/bin:/opt/ros/humble/bin:/home/seame/.cargo/bin:/home/seame/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/seame-tower:@/tmp/.ICE-unix/3079,unix/seame-tower:/tmp/.ICE-unix/3079', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.106.2', 'OE_ADDED_PATHS': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'ibus', 'ROS_PYTHON_VERSION': '3', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu-xorg', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'SYSTEMD_EXEC_PID': '3106', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'seame', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'INVOCATION_ID': 'ca6bf1824d104c728f7b7f62b502bbdc', 'MANAGERPID': '2667', 'CHROME_DESKTOP': 'code.desktop', 'GJS_DEBUG_OUTPUT': 'stderr', 'UE4_ROOT': '/home/seame/UnrealEngine_4.26', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/seame/HU_TEAM5/poky/bitbake/lib:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-56089fbc38.sock', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'JOURNAL_STREAM': '8:39132', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu-xorg', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/seame/HU_TEAM5/build', 'ROS_DISTRO': 'humble', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '536606', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/seame/HU_TEAM5', 'TERM_PROGRAM': 'vscode', '_': '/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake'}, ['/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake', '-c', 'clean', 'team5-setup']]
+680318 14:46:41.122429 Base config valid
+680318 14:46:41.135055 Sending reply (None, None)
+680318 14:46:41.135199 Command Completed (socket: True)
+680318 14:46:41.135401 Running command ['getVariable', 'BBINCLUDELOGS']
+680318 14:46:41.135454 Sending reply ('yes', None)
+680318 14:46:41.135484 Command Completed (socket: True)
+680318 14:46:41.135566 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+680318 14:46:41.135577 Sending reply (None, None)
+680318 14:46:41.135590 Command Completed (socket: True)
+680318 14:46:41.135684 Running command ['getSetVariable', 'BB_CONSOLELOG']
+680318 14:46:41.135731 Sending reply ('/home/seame/HU_TEAM5/build/tmp/log/cooker/raspberrypi4-64/20251201134640.log', None)
+680318 14:46:41.135751 Command Completed (socket: True)
+680318 14:46:41.135836 Running command ['getSetVariable', 'BB_LOGCONFIG']
+680318 14:46:41.135845 Sending reply (None, None)
+680318 14:46:41.135857 Command Completed (socket: True)
+680318 14:46:41.136819 Running command ['getUIHandlerNum']
+680318 14:46:41.136831 Sending reply (1, None)
+680318 14:46:41.136842 Command Completed (socket: True)
+680318 14:46:41.136900 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+680318 14:46:41.136912 Sending reply (True, None)
+680318 14:46:41.136927 Command Completed (socket: True)
+680318 14:46:41.136961 Running command ['setConfig', 'cmd', 'clean']
+680318 14:46:41.136969 Sending reply (None, None)
+680318 14:46:41.136982 Command Completed (socket: True)
+680318 14:46:41.137015 Running command ['buildTargets', ['team5-setup'], 'clean']
+680318 14:46:41.137051 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x76c2cec36b90>>
+680318 14:46:41.137056 Sending reply (True, None)
+680318 14:46:41.137071 Command Completed (socket: True)
+680318 14:46:41.144859 Parsing started
+680318 14:46:42.706435 Parse cache valid
+680318 14:46:44.911675 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x76c2b9437eb0>
+680318 14:46:44.911698 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x76c2cec36b90>>
+680318 14:46:46.347144 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x76c2b9437eb0> at idleFinish
+680318 14:46:46.598424 Processing Client
+680318 14:46:46.598640 Disconnecting Client (socket: True)
+680318 14:46:46.599134 Parse cache invalidated
+680318 14:46:46.599169 No timeout, exiting.
+680318 14:46:46.699397 Exiting (socket: True)
+680318 14:46:46.738254 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/seame/HU_TEAM5/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+680742 14:46:48.350300 --- Starting bitbake server pid 680742 at 2025-12-01 14:46:48.350288 ---
+680742 14:46:48.350702 Started bitbake server pid 680742
+680742 14:46:48.350787 Entering server connection loop
+680742 14:46:48.350794 Lockfile is: /home/seame/HU_TEAM5/build/bitbake.lock
+Socket is /home/seame/HU_TEAM5/build/bitbake.sock (True)
+680742 14:46:48.351096 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+680742 14:46:48.351388 Processing Client
+680742 14:46:48.351398 Connecting Client
+680742 14:46:48.351501 Running command ['setFeatures', [2, 1]]
+680742 14:46:48.351514 Sending reply (None, None)
+680742 14:46:48.351536 Command Completed (socket: True)
+680742 14:46:48.351842 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/seame/HU_TEAM5/build', 'LOGNAME': 'seame', 'HOME': '/home/seame', 'BBPATH': '/home/seame/HU_TEAM5/build', 'USER': 'seame', 'PATH': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/seame/.local/bin:/opt/ros/humble/bin:/home/seame/.cargo/bin:/home/seame/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/seame-tower:@/tmp/.ICE-unix/3079,unix/seame-tower:/tmp/.ICE-unix/3079', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.106.2', 'OE_ADDED_PATHS': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'ibus', 'ROS_PYTHON_VERSION': '3', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu-xorg', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'SYSTEMD_EXEC_PID': '3106', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'seame', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'INVOCATION_ID': 'ca6bf1824d104c728f7b7f62b502bbdc', 'MANAGERPID': '2667', 'CHROME_DESKTOP': 'code.desktop', 'GJS_DEBUG_OUTPUT': 'stderr', 'UE4_ROOT': '/home/seame/UnrealEngine_4.26', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/seame/HU_TEAM5/poky/bitbake/lib:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-56089fbc38.sock', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'JOURNAL_STREAM': '8:39132', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu-xorg', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/seame/HU_TEAM5/build', 'ROS_DISTRO': 'humble', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '536606', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/seame/HU_TEAM5', 'TERM_PROGRAM': 'vscode', '_': '/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake'}, ['/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake', 'team5-setup']]
+680742 14:46:48.540511 Base config valid
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 681266 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 681296 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 681819 681820 681940 681941 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 681819 
+Server will shut down after all clients exit.
+680742 14:46:48.548874 Sending reply (None, None)
+680742 14:46:48.548953 Command Completed (socket: True)
+680742 14:46:48.549138 Running command ['getVariable', 'BBINCLUDELOGS']
+680742 14:46:48.549174 Sending reply ('yes', None)
+680742 14:46:48.549192 Command Completed (socket: True)
+680742 14:46:48.549360 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+680742 14:46:48.549381 Sending reply (None, None)
+680742 14:46:48.549405 Command Completed (socket: True)
+680742 14:46:48.549552 Running command ['getSetVariable', 'BB_CONSOLELOG']
+680742 14:46:48.549613 Sending reply ('/home/seame/HU_TEAM5/build/tmp/log/cooker/raspberrypi4-64/20251201134648.log', None)
+680742 14:46:48.549640 Command Completed (socket: True)
+680742 14:46:48.549725 Running command ['getSetVariable', 'BB_LOGCONFIG']
+680742 14:46:48.549739 Sending reply (None, None)
+680742 14:46:48.549753 Command Completed (socket: True)
+680742 14:46:48.550776 Running command ['getUIHandlerNum']
+680742 14:46:48.550794 Sending reply (1, None)
+680742 14:46:48.550819 Command Completed (socket: True)
+680742 14:46:48.550856 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+680742 14:46:48.550864 Sending reply (True, None)
+680742 14:46:48.550877 Command Completed (socket: True)
+680742 14:46:48.550900 Running command ['getVariable', 'BB_DEFAULT_TASK']
+680742 14:46:48.550911 Sending reply ('build', None)
+680742 14:46:48.550922 Command Completed (socket: True)
+680742 14:46:48.550940 Running command ['setConfig', 'cmd', 'build']
+680742 14:46:48.550948 Sending reply (None, None)
+680742 14:46:48.550958 Command Completed (socket: True)
+680742 14:46:48.550979 Running command ['buildTargets', ['team5-setup'], 'build']
+680742 14:46:48.551004 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x74881f62eb90>>
+680742 14:46:48.551007 Sending reply (True, None)
+680742 14:46:48.551017 Command Completed (socket: True)
+680742 14:46:48.551705 Parsing started
+680742 14:46:50.018502 Parse cache valid
+680742 14:46:51.720170 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x748809e6b7f0>
+680742 14:46:51.720196 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x74881f62eb90>>
+680742 14:46:56.549520 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x748809e6b7f0> at idleFinish
+680742 14:46:56.800484 Processing Client
+680742 14:46:56.800630 Disconnecting Client (socket: True)
+680742 14:46:56.801045 Parse cache invalidated
+680742 14:46:56.801074 No timeout, exiting.
+680742 14:46:56.901476 Exiting (socket: True)
+680742 14:46:56.942145 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/seame/HU_TEAM5/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+682333 14:47:05.181570 --- Starting bitbake server pid 682333 at 2025-12-01 14:47:05.181563 ---
+682333 14:47:05.181915 Started bitbake server pid 682333
+682333 14:47:05.182014 Entering server connection loop
+682333 14:47:05.182021 Lockfile is: /home/seame/HU_TEAM5/build/bitbake.lock
+Socket is /home/seame/HU_TEAM5/build/bitbake.sock (True)
+682333 14:47:05.182228 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+682333 14:47:05.182838 Processing Client
+682333 14:47:05.182855 Connecting Client
+682333 14:47:05.182959 Running command ['setFeatures', [2, 1]]
+682333 14:47:05.182971 Sending reply (None, None)
+682333 14:47:05.182993 Command Completed (socket: True)
+682333 14:47:05.183352 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/seame/HU_TEAM5/build', 'LOGNAME': 'seame', 'HOME': '/home/seame', 'BBPATH': '/home/seame/HU_TEAM5/build', 'USER': 'seame', 'PATH': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/seame/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/seame/.local/bin:/opt/ros/humble/bin:/home/seame/.cargo/bin:/home/seame/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'ROS_VERSION': '2', 'SESSION_MANAGER': 'local/seame-tower:@/tmp/.ICE-unix/3079,unix/seame-tower:/tmp/.ICE-unix/3079', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.106.2', 'OE_ADDED_PATHS': '/home/seame/HU_TEAM5/poky/scripts:/home/seame/HU_TEAM5/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'ibus', 'ROS_PYTHON_VERSION': '3', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu-xorg', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'SYSTEMD_EXEC_PID': '3106', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'seame', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'INVOCATION_ID': 'ca6bf1824d104c728f7b7f62b502bbdc', 'MANAGERPID': '2667', 'CHROME_DESKTOP': 'code.desktop', 'GJS_DEBUG_OUTPUT': 'stderr', 'UE4_ROOT': '/home/seame/UnrealEngine_4.26', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/seame/HU_TEAM5/poky/bitbake/lib:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-56089fbc38.sock', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'ROS_LOCALHOST_ONLY': '0', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'JOURNAL_STREAM': '8:39132', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu-xorg', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/seame/HU_TEAM5/build', 'ROS_DISTRO': 'humble', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '536606', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/seame/HU_TEAM5', 'TERM_PROGRAM': 'vscode', '_': '/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake'}, ['/home/seame/HU_TEAM5/poky/bitbake/bin/bitbake', 'team5-hu-image']]
+682333 14:47:05.365581 Base config valid
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 682766 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 682787 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 683323 683324 683364 683367 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 683323 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 683843 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 695794 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 695806 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 6
+Client pids: 695889 695900 695903 695921 695980 696094 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 695900 695903 695980 696094 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 695903 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 696354 
+Server will shut down after all clients exit.
+682333 14:47:05.382634 Sending reply (None, None)
+682333 14:47:05.382718 Command Completed (socket: True)
+682333 14:47:05.382974 Running command ['getVariable', 'BBINCLUDELOGS']
+682333 14:47:05.383016 Sending reply ('yes', None)
+682333 14:47:05.383044 Command Completed (socket: True)
+682333 14:47:05.383204 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+682333 14:47:05.383226 Sending reply (None, None)
+682333 14:47:05.383301 Command Completed (socket: True)
+682333 14:47:05.383587 Running command ['getSetVariable', 'BB_CONSOLELOG']
+682333 14:47:05.383740 Sending reply ('/home/seame/HU_TEAM5/build/tmp/log/cooker/raspberrypi4-64/20251201134705.log', None)
+682333 14:47:05.383799 Command Completed (socket: True)
+682333 14:47:05.384033 Running command ['getSetVariable', 'BB_LOGCONFIG']
+682333 14:47:05.384082 Sending reply (None, None)
+682333 14:47:05.384135 Command Completed (socket: True)
+682333 14:47:05.385999 Running command ['getUIHandlerNum']
+682333 14:47:05.386048 Sending reply (1, None)
+682333 14:47:05.386112 Command Completed (socket: True)
+682333 14:47:05.386327 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+682333 14:47:05.386369 Sending reply (True, None)
+682333 14:47:05.386437 Command Completed (socket: True)
+682333 14:47:05.386723 Running command ['getVariable', 'BB_DEFAULT_TASK']
+682333 14:47:05.386788 Sending reply ('build', None)
+682333 14:47:05.386858 Command Completed (socket: True)
+682333 14:47:05.386920 Running command ['setConfig', 'cmd', 'build']
+682333 14:47:05.386941 Sending reply (None, None)
+682333 14:47:05.386976 Command Completed (socket: True)
+682333 14:47:05.387161 Running command ['buildTargets', ['team5-hu-image'], 'build']
+682333 14:47:05.387278 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7de0ad332b90>>
+682333 14:47:05.387290 Sending reply (True, None)
+682333 14:47:05.387355 Command Completed (socket: True)
+682333 14:47:05.483355 Parsing started
+682333 14:47:06.952527 Parse cache valid
+682333 14:47:09.671817 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7de097c8f910>
+682333 14:47:09.671843 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7de0ad332b90>>
+682333 14:48:21.092641 Running command ['ping']
+682333 14:48:21.092665 Sending reply ('Still alive!', None)
+682333 14:48:21.092701 Command Completed (socket: True)
+682333 14:49:29.724542 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7de097c8f910> at idleFinish
+682333 14:49:29.975544 Processing Client
+682333 14:49:29.975691 Disconnecting Client (socket: True)
+682333 14:49:29.976148 Parse cache invalidated
+682333 14:49:29.976180 No timeout, exiting.
+682333 14:49:30.076529 Exiting (socket: True)
+682333 14:49:30.085166 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/seame/HU_TEAM5/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>

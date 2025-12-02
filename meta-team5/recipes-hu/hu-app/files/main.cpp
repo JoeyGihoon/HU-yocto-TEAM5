@@ -3,9 +3,9 @@
 #include <QQmlContext>
 #include <QtWebEngine/QtWebEngine>
 #include <QtNetwork/QSslSocket>
-#include <CommonAPI/CommonAPI.hpp>
+// #include <CommonAPI/CommonAPI.hpp>
 
-#include <v0/commonapi/ICProxy.hpp> // Generated CommonAPI Proxy 헤더 파일
+// #include <v0/commonapi/ICProxy.hpp> // Generated CommonAPI Proxy 헤더 파일
 #include "mapController.h"
 #include "weather.h"
 #include "youtubeController.h"
@@ -13,30 +13,30 @@
 #include "imageExtractor.h"
 #include "GearController.h"
 
-std::shared_ptr<v0::commonapi::ICProxy<>> g_icProxy;
+// std::shared_ptr<v0::commonapi::ICProxy<>> g_icProxy;
 
-static void initSomeipProxy() {
-    auto runtime = CommonAPI::Runtime::get();
+// static void initSomeipProxy() {
+//     auto runtime = CommonAPI::Runtime::get();
 
-    std::string domain = "local";                // ini의 domain
-    std::string instance = "commonapi.IC_service"; // ini의 instance
+//     std::string domain = "local";                // ini의 domain
+//     std::string instance = "commonapi.IC_service"; // ini의 instance
 
-    auto context = std::make_shared<CommonAPI::MainLoopContext>();
+//     auto context = std::make_shared<CommonAPI::MainLoopContext>();
 
-    // g_icProxy = runtime->buildProxy<v0::commonapi::ICProxy<>>(domain, instance, connId);
-    g_icProxy = runtime->buildProxy<v0::commonapi::ICProxy>(domain, instance, context);
+//     // g_icProxy = runtime->buildProxy<v0::commonapi::ICProxy<>>(domain, instance, connId);
+//     g_icProxy = runtime->buildProxy<v0::commonapi::ICProxy>(domain, instance, context);
 
-    if (!g_icProxy) {
-        std::cerr << "[HU] Failed to create IC proxy. Starting HU without SOME/IP" << std::endl;
-        g_icProxy = nullptr;
-        return;
-    }
+//     if (!g_icProxy) {
+//         std::cerr << "[HU] Failed to create IC proxy. Starting HU without SOME/IP" << std::endl;
+//         g_icProxy = nullptr;
+//         return;
+//     }
 
-    g_icProxy->getProxyStatusEvent().subscribe([](CommonAPI::AvailabilityStatus s){
-        std::cout << "IC Proxy status: "
-                  << static_cast<int>(s) << std::endl;
-    });
-}
+//     g_icProxy->getProxyStatusEvent().subscribe([](CommonAPI::AvailabilityStatus s){
+//         std::cout << "IC Proxy status: "
+//                   << static_cast<int>(s) << std::endl;
+//     });
+// }
 
 int main(int argc, char *argv[])
 {
@@ -46,12 +46,12 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
 
-    initSomeipProxy();
+    // initSomeipProxy();
     
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
 
-    GearController gearController(g_icProxy);
+    GearController gearController;
     engine.rootContext()->setContextProperty("gearController", &gearController);
 
     MapController mapController;

@@ -15,7 +15,6 @@ Item {
 
         contentItem: Rectangle {
             id: frame
-            property string city: "Wolfsburg"
             anchors.fill: parent
             anchors.margins: 10               // 카드 안쪽 여백
             radius: 12
@@ -99,15 +98,25 @@ Item {
             // 처음 로드 시 한 번 조회
             Component.onCompleted: {
                 weather.fetchWeatherData(weatherWidget.city)
+                fastRetryTimer.start()
             }
 
             // 주기 갱신 (운영 시 60초 이상 권장)
             Timer {
                 id: updateTimer
                 interval: 60000                  // 60초
-                running: true
+                running: false
                 repeat: true
-                onTriggered: weather.fetchWeatherData(region.text)
+                onTriggered: weather.fetchWeatherData(weatherWidget.city)
+            }
+
+            // 첫 성공 전까지 짧은 간격으로 재시도하는 타이머
+            Timer {
+                id: fastRetryTimer
+                interval: 5000           // 5초마다 재시도
+                running: false
+                repeat: true
+                onTriggered: weather.fetchWeatherData(weatherWidget.city)
             }
 
             // C++ Weather 객체 시그널 수신
@@ -118,7 +127,15 @@ Item {
                     weatherImage.source = iconPath
                     weatherImage.visible = !!iconPath
                     tempInfo.text = Number(temperature).toFixed(1) + "  °C"
+                
+                    // 데이터 한 번이라도 제대로 들어오면
+                    // 빠른 재시도 타이머는 끄고, 60초 주기 타이머 켜기
+                    if (fastRetryTimer.running)
+                        fastRetryTimer.stop()
+                    if (!updateTimer.running)
+                        updateTimer.start()
                 }
+
                 function onErrorOccurred(err) {
                     console.error("Weather error:", err)
                 }
