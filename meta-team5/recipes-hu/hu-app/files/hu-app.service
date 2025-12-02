@@ -9,6 +9,8 @@ Type=simple
 Environment=QT_QPA_PLATFORM=wayland
 Environment=XDG_RUNTIME_DIR=/run
 Environment=WAYLAND_DISPLAY=wayland-0
+Environment=QT_IM_MODULE=qtvirtualkeyboard
+Environment=QT_VIRTUALKEYBOARD_STYLE=default
 
 Environment=COMMONAPI_CONFIG=/opt/HU_someip/commonapi-someip.ini
 Environment=VSOMEIP_CONFIGURATION=/opt/HU_someip/json/HU.json

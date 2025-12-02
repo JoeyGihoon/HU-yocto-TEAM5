@@ -10,7 +10,7 @@ IMAGE_INSTALL:append = " \
   gstreamer1.0 gstreamer1.0-plugins-base \
   gstreamer1.0-plugins-good gstreamer1.0-plugins-bad \
   gstreamer1.0-libav gst-player \
-  weston weston-init \
+  weston weston-init qtvirtualkeyboard qtvirtualkeyboard-plugins qtvirtualkeyboard-qmlplugins \
   wpa-supplicant connman connman-client linux-firmware \
   hu-app bootvideo getty-tty2 \
   linux-firmware-bcm43430 linux-firmware-bcm43455 wpa-supplicant iw dhcpcd \

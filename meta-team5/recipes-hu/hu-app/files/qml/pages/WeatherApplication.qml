@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.0
 import QtGraphicalEffects 1.0
+import QtQuick.VirtualKeyboard 2.4
 
 Item {
     id: weatherApplication
@@ -111,6 +112,12 @@ Item {
             width: 500
 
             onTextChanged: searchText = text
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: searchField.forceActiveFocus()
+                hoverEnabled: false
+            }
         }
 
         Button {
@@ -225,6 +232,18 @@ Item {
                     forecastData = receivedData
                 }
             }
+    }
+
+    // ===== 가상 키보드 패널 =====
+    InputPanel {
+        id: inputPanel
+        z: 999
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+
+        // Qt.inputMethod.visible 값에 따라 자동으로 보였다/숨겨짐
+        visible: Qt.inputMethod.visible
     }
 
 }
