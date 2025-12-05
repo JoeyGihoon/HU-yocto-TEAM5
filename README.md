@@ -58,15 +58,55 @@ Below are the key UI screens included in the system:
 The main dashboard provides quick access to all core applications:
 
 - Gear setting
-- 
+  
 - Weather
   
 - Maps
 
--YouTube
+- YouTube
 
--Music
+- Music
 
--Ambient Light settings
+- Ambient Light settings
 
 The UI is designed with a premium M-style theme and includes a gear indicator (P/R/N/D) synced with the Instrument Cluster via vehicle-side communication.
+
+### YouTube Integration
+
+The YouTube module embeds the YouTube web interface directly in the head unit, allowing users to browse and stream content through a clean, car-optimized layout.
+
+### Real-Time Weather Forecast
+
+The Weather module displays:
+
+- Current temperature
+
+- Weather conditions
+
+- A 5-day forecast with dynamic icons
+
+- Search capability for any city
+
+Data is fetched online and updated directly from the API.
+
+
+### Google Maps Navigation
+
+The Maps module uses the Google Maps API to provide interactive navigation capability.
+Users can pan, zoom, and switch between Map and Satellite views inside the Qt environment.
+
+<p align="center">
+  <video src="music.webm" width="45%" controls></video>
+  <video src="ambient light.webm" width="45%" controls></video>
+</p>
+
+### Music
+
+A lightweight and elegant music player designed for in-vehicle use.
+It offers straightforward playback controls and a polished UI that integrates seamlessly with the head-unit environment.
+
+### Ambient Light
+
+A dynamic ambient-light controller that enables users to personalize interior lighting.
+Includes smooth color transitions and an intuitive circular selector interface.
+
