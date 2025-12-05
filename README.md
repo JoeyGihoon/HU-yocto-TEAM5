@@ -39,10 +39,11 @@ SEA-ME-Head-Unit/IC_team5/yocto/poky/meta/recipes-connectivity/wpa-supplicant/wp
 
 ## 3. Function
 <p align="center">
-   <img src="main.png" width="23%">
-  <img src="weather.png" width="23%">
-  <img src="map.png" width="23%">
-    <img src="youtube.png" width="23%">
+  <img src="./assets/main.png" width="23%">
+  <img src="./assets/youtube.png" width="23%">
+  <img src="./assets/weather.png" width="23%">
+  <img src="./assets/map.png" width="23%">
 </p>
+
 
 
