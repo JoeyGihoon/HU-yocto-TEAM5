@@ -37,7 +37,7 @@ network={
 File location:
 SEA-ME-Head-Unit/IC_team5/yocto/poky/meta/recipes-connectivity/wpa-supplicant/wpa-supplicant/wpa_supplicant.conf-sane
 
-## 3. Function
+## 4. Function
 <p align="center">
   <img src="./assets/main.png" width="23%">
   <img src="./assets/youtube.png" width="23%">
@@ -46,4 +46,27 @@ SEA-ME-Head-Unit/IC_team5/yocto/poky/meta/recipes-connectivity/wpa-supplicant/wp
 </p>
 
 
-##ㅈㄴ
+### 4.1 Overview
+
+The SEA:ME Head Unit aims to provide a smooth, intuitive, and visually cohesive infotainment experience similar to commercial automotive systems.
+It is developed to run on Yocto-based Linux with Qt/QML, supporting Ethernet communication with the Instrument Cluster (IC).
+
+Below are the key UI screens included in the system:
+
+### 4.2 Home Dashboard
+
+The main dashboard provides quick access to all core applications:
+
+- Gear setting
+- 
+- Weather
+  
+- Maps
+
+-YouTube
+
+-Music
+
+-Ambient Light settings
+
+The UI is designed with a premium M-style theme and includes a gear indicator (P/R/N/D) synced with the Instrument Cluster via vehicle-side communication.
