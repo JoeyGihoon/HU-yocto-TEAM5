@@ -134,15 +134,24 @@ Item {
             target: usbScanner
             function onTracksChanged() {
                 trackModel.clear()
-                for (var i = 0; i < usbScanner.trackUrls.length; ++i) {
+        
+                var urls  = usbScanner.trackUrls   // ← 괄호 X
+                var names = usbScanner.trackNames  // ← 괄호 X
+                console.log("onTracksChanged: urls len =", urls.length,
+                            "names len =", names.length)
+        
+                for (var i = 0; i < urls.length; ++i) {
                     trackModel.append({
-                        title: usbScanner.trackNames[i] || ("Track " + (i+1)),
-                        url:   usbScanner.trackUrls[i],
-                        // 선택 전엔 기본 로고로
+                        title: (names && names[i]) ? names[i] : ("Track " + (i+1)),
+                        url:   urls[i],
                         cover: "qrc:/qml/images/m5logo.png"
                     })
                 }
-                if (trackModel.count > 0) currentTrack = 0;   // ✅ 중요: 초기 선택
+        
+                console.log("trackModel.count after fill =", trackModel.count)
+        
+                if (trackModel.count > 0)
+                    currentTrack = 0
             }
         }
 
