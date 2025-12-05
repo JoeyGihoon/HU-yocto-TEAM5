@@ -13,7 +13,8 @@ Overall, the goal of this project is to offer a unified development environment 
 
 ## 2. Architecture
 
-![architecture](https://github.com/user-attachments/assets/3815f4dd-7300-4212-a2ee-b338cee825fb)
+<img width="1280" height="800" alt="System_Architecture2" src="https://github.com/user-attachments/assets/479ad51e-015f-44c6-aec5-2846765896cc" />
+
 
 ## 3. Build & Installation
 This system must be built on an Ubuntu 22 environment.
