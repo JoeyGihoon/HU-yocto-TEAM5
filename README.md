@@ -95,12 +95,8 @@ Data is fetched online and updated directly from the API.
 The Maps module uses the Google Maps API to provide interactive navigation capability.
 Users can pan, zoom, and switch between Map and Satellite views inside the Qt environment.
 
-<p align="center">
-  <video src="./assets/music.webm" width="45%" controls></video>
-  <video src="./assets/ambient light.webm" width="45%" controls></video>
-</p>
-
-### Music
+<video src="https://github.com/JoeyGihoon/HU-yocto-TEAM5/releases/tag/video/music.webm" width="45%" controls></video>
+<video src="https://github.com/JoeyGihoon/HU-yocto-TEAM5/releases/tag/video/ambient_light.webm" width="45%" controls></video>
 
 A lightweight and elegant music player designed for in-vehicle use.
 It offers straightforward playback controls and a polished UI that integrates seamlessly with the head-unit environment.
