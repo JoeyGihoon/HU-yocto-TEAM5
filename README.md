@@ -37,4 +37,10 @@ network={
 File location:
 SEA-ME-Head-Unit/IC_team5/yocto/poky/meta/recipes-connectivity/wpa-supplicant/wpa-supplicant/wpa_supplicant.conf-sane
 
+## 3. Function
+<img width="1028" height="595" alt="map" src="https://github.com/user-attachments/assets/39a0fbd3-e833-4a71-b5ca-b9c29568f2b2" />
+<img width="1023" height="601" alt="weather" src="https://github.com/user-attachments/assets/76250701-eb9c-4d41-bc8b-6b78812bd99e" />
+<img width="1022" height="597" alt="main" src="https://github.com/user-attachments/assets/9243d9b4-8339-4de0-bdbe-7e83af423908" />
+<img width="1029" height="588" alt="youtube" src="https://github.com/user-attachments/assets/50608660-561d-4eef-aed1-e6c5e0708e6e" />
+
 
