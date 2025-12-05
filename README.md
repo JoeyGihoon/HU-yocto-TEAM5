@@ -94,18 +94,15 @@ Data is fetched online and updated directly from the API.
 
 The Maps module uses the Google Maps API to provide interactive navigation capability.
 Users can pan, zoom, and switch between Map and Satellite views inside the Qt environment.
-
-
-  <video src="https://github-production-user-asset-6210df.s3.amazonaws.com/58922365/522946911-ca01a20a-aeda-4c5a-a32f-8a9bfdfd9cb3.webm?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251205%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251205T123120Z&X-Amz-Expires=300&X-Amz-Signature=f8be94aef23e44ad4e9b46252420294f8133b6e221a23b0ab4d033d5ee0afe4a&X-Amz-SignedHeaders=host" width="45%" controls></video>
     
 ### 4.6 Music
 A lightweight and elegant music player designed for in-vehicle use.
 It offers straightforward playback controls and a polished UI that integrates seamlessly with the head-unit environment.
-  <video src="https://github-production-user-asset-6210df.s3.amazonaws.com/58922365/522946907-2fd988cb-a1d5-4237-9245-403baae8e836.webm?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251205%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251205T123006Z&X-Amz-Expires=300&X-Amz-Signature=b682dcfd960bb6d0216a091f1feb794813c14b8161964afbbce101b3fe8c14f5&X-Amz-SignedHeaders=host" width="45%" controls></video>
-
+  <video src="https://github-production-user-asset-6210df.s3.amazonaws.com/58922365/522946911-ca01a20a-aeda-4c5a-a32f-8a9bfdfd9cb3.webm?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251205%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251205T123120Z&X-Amz-Expires=300&X-Amz-Signature=f8be94aef23e44ad4e9b46252420294f8133b6e221a23b0ab4d033d5ee0afe4a&X-Amz-SignedHeaders=host" width="45%" controls></video>
 
 ### 4.7 Ambient Light
 
 A dynamic ambient-light controller that enables users to personalize interior lighting.
 Includes smooth color transitions and an intuitive circular selector interface.
 
+  <video src="https://github-production-user-asset-6210df.s3.amazonaws.com/58922365/522946907-2fd988cb-a1d5-4237-9245-403baae8e836.webm?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251205%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251205T123006Z&X-Amz-Expires=300&X-Amz-Signature=b682dcfd960bb6d0216a091f1feb794813c14b8161964afbbce101b3fe8c14f5&X-Amz-SignedHeaders=host" width="45%" controls></video>
