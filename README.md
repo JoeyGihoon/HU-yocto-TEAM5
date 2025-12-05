@@ -96,8 +96,8 @@ The Maps module uses the Google Maps API to provide interactive navigation capab
 Users can pan, zoom, and switch between Map and Satellite views inside the Qt environment.
 
 <p align="center">
-  <video src="music.webm" width="45%" controls></video>
-  <video src="ambient light.webm" width="45%" controls></video>
+  <video src="./assets/music.webm" width="45%" controls></video>
+  <video src="./assets/ambient light.webm" width="45%" controls></video>
 </p>
 
 ### Music
